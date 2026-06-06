@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main circle (table ronde) -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#001F3F" stroke-width="3"/>
+  
+  <!-- Inner circle (inner accent) -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Travel line (voyage) -->
+  <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Destination point (arrivée) -->
+  <circle cx="155" cy="45" r="5" fill="#E8A572"/>
+</svg>
