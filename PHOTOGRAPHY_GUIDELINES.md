@@ -8,7 +8,7 @@
 ### Core Principle
 **Authentic & Documentary**
 
-Photography should feel real, lived-in, and honest. Not staged influencer content. Think: photo-essay in a travel magazine, not Instagram aesthetic.
+Photography should feel real, lived-in, and honest. Not staged influencer content.
 
 ### Visual Story
 We document moments of connection, curiosity, and reflection. Photos show:
@@ -42,7 +42,6 @@ We document moments of connection, curiosity, and reflection. Photos show:
 - Traditional crafts
 - Food & local culture
 - Maps, guides, travel artifacts
-- Weather & light interactions
 
 ### What to Avoid
 
@@ -57,7 +56,6 @@ We document moments of connection, curiosity, and reflection. Photos show:
 - Blurry or poorly lit images
 - Too dark or overexposed
 - Cluttered or distracting backgrounds
-- Gimmicky angles or perspectives
 
 ---
 
@@ -83,13 +81,6 @@ We document moments of connection, curiosity, and reflection. Photos show:
 - Light grain/texture welcome
 - Moody/dramatic acceptable (not cheesy)
 
-### Avoid
-
-❌ Harsh midday sun
-❌ Neon/artificial indoor lighting
-❌ Overly bright/washed out
-❌ Cold fluorescent light
-
 ---
 
 ## 4. COLOR & PALETTE
@@ -108,18 +99,6 @@ Photos should naturally complement brand palette:
 - **Slight warmth** boost acceptable
 - **Not overly filtered** or HDR-processed
 - **Film look** acceptable (vintage quality)
-
-### Specific Color Guidelines
-
-**Backgrounds** :
-- Neutral tones preferred
-- Blurred backgrounds often better than sharp
-- Avoid bright neon signs in background
-
-**Subjects** :
-- Natural skin tones (not orange from filters)
-- Fabric colors true to reality
-- Nature colors warm but realistic
 
 ---
 
@@ -140,21 +119,11 @@ Photos should naturally complement brand palette:
 - Too tight (no breathing room)
 - Cluttered or busy backgrounds
 
-### Perspective
-
-- **Eye-level** : Most shots, creates connection
-- **Slightly low** : Subjects feel more prominent
-- **Detail/macro** : Texture and close-ups
-- **Wide/environmental** : Context & landscape
-- **Avoid** : Extreme angles that feel gimmicky
-
 ---
 
 ## 6. ASPECT RATIOS & FORMATS
 
 ### Variety is Key
-
-Don't use the same ratio for every shot:
 
 - **16:9** (Landscape) : Wide environmental shots, travel scenes
 - **4:3** (Slightly square) : Portraits, medium compositions
@@ -202,7 +171,6 @@ Don't use the same ratio for every shot:
 - Extreme saturation
 - Blown-out sky with fake HDR
 - Over-sharpened (looks fake)
-- Extreme vignette
 
 ❌ **Manipulation** :
 - Removing people/elements
@@ -210,42 +178,9 @@ Don't use the same ratio for every shot:
 - Excessive skin smoothing
 - Unrealistic color shifts
 
-### Editing Software
-
-Recommended:
-- Lightroom (for batch processing)
-- Capture One (professional)
-- Photoshop (for retouching)
-- Avoid: Heavy filters from mobile apps
-
 ---
 
-## 8. QUICK CHECKLIST FOR PHOTOGRAPHERS
-
-**Before Shoot** :
-- [ ] Scout location (lighting, backgrounds)
-- [ ] Check weather forecast
-- [ ] Plan for golden hour timing
-- [ ] Backup batteries/memory cards
-- [ ] Brief on mood/vibe needed
-
-**During Shoot** :
-- [ ] Capture candid moments (not posed)
-- [ ] Vary angles & distances
-- [ ] Pay attention to backgrounds
-- [ ] Get close-up details
-- [ ] Respect subject comfort
-
-**After Shoot** :
-- [ ] Backup files immediately (2 copies)
-- [ ] Light cull (remove obvious rejects)
-- [ ] Organize by folder structure
-- [ ] Edit for consistency
-- [ ] Final quality check
-
----
-
-## 9. TONE & FEELING
+## 8. TONE & FEELING
 
 Every photo should feel like:
 
@@ -267,28 +202,8 @@ Not:
 
 ---
 
-## 10. REFERENCE INSPIRATION
-
-**Publications** (visual style) :
-- Condé Nast Traveler
-- National Geographic
-- The New Yorker (travel section)
-- Monocle
-- Kinfolk Magazine
-
-**Photographers** (aesthetic) :
-- Vivian Maier
-- Fan Ho
-- Steve McCurry
-- Magnum photographers
-- Contemporary travel photographers
-
----
-
 **Version** : 1.0 | **Date** : 2026-06-06
 
 **Remember** : Photography is the heart of our visual story. Keep it real, warm, and human.
-
-**Questions?** Contact Brand Manager or Creative Lead.
 
 **Partir, revenir, raconter.** 📸

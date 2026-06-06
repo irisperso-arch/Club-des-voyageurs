@@ -13,22 +13,8 @@ Bienvenue dans l'espace centralisé de l'identité de marque pour Le Club des Vo
 - **[BRAND_GUIDELINES.md](BRAND_GUIDELINES.md)** — Guidelines complètes (couleurs, typo, ton, applications)
 - **[PHOTOGRAPHY_GUIDELINES.md](PHOTOGRAPHY_GUIDELINES.md)** — Directives pour la photographie
 - **[TONE_OF_VOICE.md](TONE_OF_VOICE.md)** — Guide complet du ton et de la voix
-
-### 🎨 Templates & Assets
-- **[TEMPLATES/](TEMPLATES/)** — Tous les templates visuels
-  - YouTube thumbnails
-  - Instagram posts & stories
-  - Email newsletters
-  - Social media cards
-  - Studio graphics
-
-### 🎯 Logo & Visual Assets
-- **[ASSETS/LOGOS/](ASSETS/LOGOS/)** — Logo variations
-- **[ASSETS/COLORS/](ASSETS/COLORS/)** — Palette couleurs (Pantone, HEX, RGB)
-- **[ASSETS/ICONS/](ASSETS/ICONS/)** — Icônes système
-
-### 📊 Quick Reference
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** — Cheat sheet rapide (1 page)
+- **[LOGO_PREVIEW.html](LOGO_PREVIEW.html)** — Aperçu interactif des logos et couleurs
 
 ---
 
@@ -40,8 +26,6 @@ Bienvenue dans l'espace centralisé de l'identité de marque pour Le Club des Vo
 | Turquoise | #7ECCC4 | 126, 204, 196 | Accents, CTA |
 | Beige/Crème | #F5E6D3 | 245, 230, 211 | Fonds principaux |
 | Blanc Cassé | #F8F5F0 | 248, 245, 240 | Fonds respirants |
-| Bleu Ciel | #B8D4E0 | 184, 212, 224 | Fonds secondaires |
-| Jaune Pâle | #F9D5A8 | 249, 213, 168 | Highlights |
 | Orange/Corail | #E8A572 | 232, 165, 114 | Détails, CTA alt |
 
 ---
@@ -64,11 +48,11 @@ Bienvenue dans l'espace centralisé de l'identité de marque pour Le Club des Vo
 
 ---
 
-## 🚀 Comment Utiliser Ce Repository
+## 📖 Comment Utiliser Ce Repository
 
 ### Pour les Designers
 1. Consultez **BRAND_GUIDELINES.md** pour la palette complète
-2. Utilisez les templates dans **TEMPLATES/** pour créer de nouveau contenu
+2. Consultez **LOGO_PREVIEW.html** pour voir les variations du logo
 3. Respectez l'espacement, la typographie et les couleurs
 
 ### Pour les Producteurs/Éditeurs
@@ -83,7 +67,22 @@ Bienvenue dans l'espace centralisé de l'identité de marque pour Le Club des Vo
 
 ---
 
-## 📱 Applications Principales
+## 🎯 Brand Essence
+
+**Positionnement** : Le Club des Voyageurs est le talk show de voyage pour les voyageurs belges francophones — un espace où on débat sans prise de tête, où on parle vrai, et où chaque conversation devient une invitation à partir.
+
+**Promesse** : Chaque conversation devient une invitation au voyage (sans la BS marketing).
+
+**Valeurs** :
+- ✅ Authentique : Des histoires vraies, pas de fake
+- ✅ Accessible : Cultivé mais jamais prétentieux
+- ✅ Drôle : Avec légèreté et auto-dérision
+- ✅ Expertise : On sait de quoi on parle
+- ✅ Convivialité : Entre potes, vraiment
+
+---
+
+## 🎬 Applications Principales
 
 ### Digital
 - Website / Landing page
@@ -97,21 +96,6 @@ Bienvenue dans l'espace centralisé de l'identité de marque pour Le Club des Vo
 - Signalétique
 - Print collateral (business cards, letterhead)
 - Graphics on-screen
-
----
-
-## ✨ Brand Essence
-
-**Positionnement** : Le Club des Voyageurs est le talk show de voyage pour les voyageurs belges francophones — un espace où on débat sans prise de tête, où on parle vrai, et où chaque conversation devient une invitation à partir.
-
-**Promesse** : Chaque conversation devient une invitation au voyage (sans la BS marketing).
-
-**Valeurs** :
-- ✅ Authentique : Des histoires vraies, pas de fake
-- ✅ Accessible : Cultiver sans être prétentieux
-- ✅ Drôle : Avec humour et légèreté
-- ✅ Expertise : On sait de quoi on parle
-- ✅ Convivialité : Entre potes, vraiment
 
 ---
 
@@ -133,3 +117,5 @@ Pour des questions sur les guidelines :
 ---
 
 **Bienvenue au Club. Partir, revenir, raconter.** 🌍
+
+**Et surtout : pas de bullshit.** 💯

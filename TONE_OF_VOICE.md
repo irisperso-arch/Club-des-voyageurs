@@ -97,7 +97,7 @@ Tu es le pote qui :
 ✗ "Les erreurs de navigation enrichissent le parcours du voyageur."
 ```
 
-### ❌ DON'Ts - Ce qu'il faut éviter
+### ✗ DON'Ts - Ce qu'il faut éviter
 
 **Ne soyez pas prétentieux**
 ```
@@ -121,7 +121,7 @@ Tu es le pote qui :
 
 **N'utilisez pas trop d'emojis**
 ```
-✗ "C'était 🔥🌍✈️🏖️😍🙌🎉"
+✗ "C'était 🔥🌍✈️🏖️🙏🎉"
 ✓ "C'était fou. 🌍"
 ```
 
@@ -145,8 +145,6 @@ Tu es le pote qui :
 ### 📺 YOUTUBE DESCRIPTION
 
 **Tone** : Informal, enthousiasmé, factuel
-
-**Structure** : Hook + Context + What's In It + CTA
 
 **Exemple** :
 ```
@@ -189,7 +187,7 @@ Partir, revenir, raconter.
 
 **Tone** : Teaser, intrigant, shareable
 
-**Exemple 1 - Standard** :
+**Exemple 1** :
 ```
 Partir en Islande = se confronter à soi-même.
 
@@ -201,7 +199,7 @@ Pas sur la route. En lui-même.
 #ClubDesVoyageurs #PartirRevenirRaconter
 ```
 
-**Exemple 2 - Quote** :
+**Exemple 2** :
 ```
 "Le voyage, c'est cool. Mais c'est aussi
 savoir que tu reviens jamais pareil."
@@ -211,69 +209,6 @@ savoir que tu reviens jamais pareil."
 Full episode out now.
 
 #ClubDesVoyageurs
-```
-
-**Exemple 3 - Question** :
-```
-T'as voyagé seul une fois ?
-
-Ce qui se passe là-bas va te surprendre.
-
-On en parle cette semaine.
-
-#ClubDesVoyageurs
-```
-
-### 💬 SOCIAL MEDIA COMMENTS
-
-**Tone** : Genuine, conversational, engaging
-
-**Quand un follower commente** :
-```
-@username Haha oui ! Vous avez été où ? 👀
-```
-
-**Quand tu promotes un épisode** :
-```
-Sérieusement, la plupart des gens ne parlent pas de ça.
-Mais c'est exactement ce qui se passe quand tu reviens.
-Nouveau épisode demain → [link]
-```
-
-### 🎬 VIDEO SCRIPTS / ON-AIR
-
-**Tone** : Natural, conversational, no scripted vibe
-
-**Exemple d'intro** :
-```
-"Hey, bienvenue au Club.
-
-Alors, vous revenez d'où ?
-
-(Wait for answer)
-
-Ok cool. Parce qu'on a un truc à débattre.
-Pour beaucoup de gens, revenir d'un voyage c'est plus dur que d'y aller.
-C'est vrai ça?"
-```
-
-**Exemple de transition** :
-```
-"Attends, rewind. T'as dit quoi? Ça craint?
-
-Explique ça parce que c'est exactement ce qu'on entend pas assez."
-```
-
-**Exemple de closing** :
-```
-"Merci d'avoir partagé ça avec nous.
-
-C'est ça qu'on aime ici. Les vraies histoires.
-Pas de fakes, pas de filters.
-
-Si t'as aimé, partage. Et rejoin-nous la semaine prochaine.
-
-Partir, revenir, raconter."
 ```
 
 ---
@@ -336,70 +271,7 @@ Des histoires qui te font réfléchir."
 
 ---
 
-## 6. TONE VARIATIONS BY CONTENT TYPE
-
-### Episode Teaser (30 sec)
-```
-[Dramatic travel shot]
-
-"Revenir d'un voyage... c'est pas cool.
-C'est parfois dur.
-
-Cette semaine au Club:
-Trois voyageurs. Une vraie question.
-Zéro filtres.
-
-Partir. Revenir. Raconter.
-Nouveau épisode jeudi."
-```
-
-### Guest Introduction
-```
-"Yo, bienvenue au Club.
-
-Vous revenez d'une expérience dingue en [PLACE].
-Mais avant ça vous aviez déjà fait [THING].
-
-C'est quoi que vous cherchez vraiment quand vous voyagez?"
-```
-
-### Closing Remarks
-```
-"Merci d'avoir partagé ça avec nous.
-
-C'est ça qu'on aime — les vraies conversations.
-
-Si t'as aimé, partage avec tes potes qui voyagent.
-Et rejoin-nous la semaine prochaine.
-
-Partir, revenir, raconter."
-```
-
----
-
-## 7. HASHTAG STRATEGY
-
-### Always Use
-- #ClubDesVoyageurs
-- #PartirRevenirRaconter
-
-### Sometimes (if relevant)
-- #VoyageAuthentique
-- #ConversationsDeVoyage
-- #HistoiresDeVoyage
-- Episode-specific: #Islande, #Asie, etc.
-
-### NEVER
-- #wanderlust
-- #instatravel
-- #travel
-- #explorersociety
-- #travelgram
-- Anything that feels like corporate marketing
-
----
-
-## 8. QUICK REFERENCE TABLE
+## 6. QUICK REFERENCE TABLE
 
 | Channel | Tone | Length | Format |
 |---------|------|--------|--------|
@@ -413,105 +285,13 @@ Partir, revenir, raconter."
 
 ---
 
-## 9. THE GOLDEN RULE
+## 7. THE GOLDEN RULE
 
 **Si ça sonne comme du marketing... c'est pas bon.**
 
 **Si ça sonne comme une conversation avec un pote qui revient de voyage... c'est bon.**
 
 C'est aussi simple que ça.
-
----
-
-## 10. RED FLAGS ("NON, PAS BON")
-
-❌ "Experience transformationnelle"
-
-❌ "Synergies culturelles"
-
-❌ "Journey authentique"
-
-❌ "Explorer votre vrai moi"
-
-❌ "Un conte de voyage majeur"
-
-❌ Trop d'exclamation marks!!!
-
-❌ Hashtags de influenceur partout
-
-❌ Selfies avec grosse pose
-
-❌ "Le voyage a changé ma vie pour toujours 🙏✈️"
-
----
-
-## 11. GREEN LIGHTS ("OUI, BON")
-
-✅ "T'as eu peur?"
-
-✅ "Ça craint mais c'est cool."
-
-✅ "Je me suis gaffé trois fois."
-
-✅ "On débat ça."
-
-✅ "C'était une bonne question."
-
-✅ Naturel, pas de pose
-
-✅ Vraies émotions, pas fakes
-
-✅ Spécifique: noms, lieux, détails
-
-✅ Avec de l'humour
-
-✅ "J'ai pleuré. Et alors?"
-
----
-
-## 12. VOICE ACROSS CONTEXTS
-
-### When You're Announcing an Episode
-```
-"Yo, nouvel épisode cette semaine.
-On parle de ce qui se passe vraiment quand tu reviens d'un voyage.
-C'est heavy. C'est réel. Viens débattre."
-```
-
-### When You're Engaging with Viewers
-```
-"Vous aussi vous avez eu ça? Partage ton histoire.
-On la discute peut-être dans un prochain épisode."
-```
-
-### When You're Explaining the Show
-```
-"Le Club des Voyageurs c'est pas un show de lifestyle.
-C'est des vraies conversations avec des gens qui ont voyagé.
-On parle de ce qu'il se passe vraiment.
-Zéro filtre. Zéro marketing."
-```
-
-### When You're Responding to Criticism
-```
-"C'est fair. On peut améliorer ça. T'as une idée?
-Notre DM est ouvert."
-```
-
----
-
-## 13. FINAL CHECKLIST
-
-Avant de poster, demande-toi :
-
-- [ ] Ça sonne comme une vraie conversation?
-- [ ] J'utilise du jargon marketing bullshit?
-- [ ] C'est spécifique ou vague?
-- [ ] Y'a de l'humour?
-- [ ] C'est honnête?
-- [ ] Un pote comprendrait du premier coup?
-- [ ] J'essaie de vendre quelque chose ou de raconter une histoire?
-- [ ] Les emojis sont pas excessifs?
 
 ---
 

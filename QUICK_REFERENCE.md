@@ -67,15 +67,15 @@ Texte:             #1A1A1A
 - ✅ Vrai, pas lisse
 - ✅ Direct
 
-## ❌ DON'Ts
+## ✗ DON'Ts
 
-- ❌ Marketing bullshit
-- ❌ Jargon corporate
-- ❌ Trop d'emojis (max 1-2)
-- ❌ Prétentieux / elitist
-- ❌ Influenceur vibes
-- ❌ Hashtags génériques
-- ❌ Exagérer
+- ✗ Marketing bullshit
+- ✗ Jargon corporate
+- ✗ Trop d'emojis (max 1-2)
+- ✗ Prétentieux / elitist
+- ✗ Influenceur vibes
+- ✗ Hashtags génériques
+- ✗ Exagérer
 
 ---
 
@@ -115,16 +115,9 @@ Partir, revenir, raconter.
 T'as voyagé en [PLACE]? On débat ça.
 ```
 
-### Email Opening
-```
-Salut,
-
-[PERSONAL HOOK or QUESTION]
-```
-
 ---
 
-## 📺 SOCIAL MEDIA SIZES
+## 📊 SOCIAL MEDIA SIZES
 
 - **Instagram Post** : 1080x1350px (4:5)
 - **Instagram Story** : 1080x1920px (9:16)
@@ -142,28 +135,6 @@ Salut,
 - TikTok: @clubdesvoyageurs
 - LinkedIn: Le Club des Voyageurs
 - Twitter/X: @ClubVoyageurs
-
----
-
-## 🚀 LAUNCH CHECKLIST
-
-- [ ] Logo finalized
-- [ ] Website live
-- [ ] YouTube channel branded
-- [ ] Instagram profile complete
-- [ ] First episode posted
-- [ ] Email newsletter template ready
-- [ ] Team briefed on TONE
-- [ ] Collateral printed
-
----
-
-## 📄 DOCUMENT REFERENCE
-
-- **BRAND_GUIDELINES.md** — Full visual guidelines
-- **TONE_OF_VOICE.md** — THE guide (read this!)
-- **PHOTOGRAPHY_GUIDELINES.md** — Photo directives
-- **README.md** — Overview
 
 ---
 

@@ -14,13 +14,13 @@
 C'est un voyage partagé : chaque conversation devient une invitation, chaque épisode une fenêtre sur le monde.
 
 ### Valeurs Fondamentales
-- **Authenticité** : Des histoires vraies, pas de fake
-- **Accessibilité** : Cultivé mais jamais prétentieux
-- **Humour** : Avec légèreté et auto-dérision
+- **Authenticity** : Des histoires vraies, pas de fake
+- **Accessibility** : Cultivé mais jamais prétentieux
+- **Humor** : Avec légèreté et auto-dérision
 - **Expertise** : On sait de quoi on parle
-- **Convivialité** : Entre potes, vraiment
+- **Conviviality** : Entre potes, vraiment
 
-### Personality (5 mots)
+### Personality (5 words)
 **Décontracté • Authentique • Direct • Chaleureux • Drôle**
 
 ---
@@ -44,26 +44,6 @@ C'est un voyage partagé : chaque conversation devient une invitation, chaque é
 - **Texte Secondaire** : #4A4A4A (gris chaud)
 - **Bordures/Séparateurs** : #D4C4B0 (beige plus foncé)
 - **Hover/Active States** : #7ECCC4 (turquoise)
-
-### Application Pratique
-
-**Web & Digital :**
-```
-Background principal : #F8F5F0
-Cards/Conteneurs : #F5E6D3
-Headers/Footers : #001F3F
-CTA Primary : #7ECCC4
-CTA Secondary : #E8A572
-Texte : #1A1A1A
-```
-
-**Studio/Print :**
-```
-Fond studio : Beige crème #F5E6D3 ou blanc cassé #F8F5F0
-Accents mobilier/éléments : Turquoise #7ECCC4
-Logo/Signalétique : Bleu marine #001F3F
-Détails dorés/précieux : Orange corail #E8A572
-```
 
 ---
 
@@ -90,79 +70,30 @@ Détails dorés/précieux : Orange corail #E8A572
 - Usage : Citations, taglines, moments poétiques
 - Style : 18px, Italic, Couleur : Bleu marine #001F3F
 
-### Font Pairings
-```
-Titres : Playfair Display
-Corps : Inter
-Accents : Lora Italic
-```
-
 ---
 
-## 4. STYLE VISUEL & DESIGN LANGUAGE
+## 4. LOGO CONCEPT
 
-### Photographie
-- **Authentique & Documentaire** : Photos vraies, avec âme, pas stock photos lisses
-- **Moment de vie** : Gens en interaction, curiosité, connexion
-- **Atmosphère** : Lumière naturelle, couleurs chaudes, grain léger acceptable
-- **Composition** : Cadrage naturel, pas trop stylisé
-- **Ratio** : Variété (pas tout carré) — portraits, paysages, détails
-
-### Éléments Graphiques
-- **Lignes fines** : Séparateurs en turquoise ou beige
-- **Cadres/Bordures** : Simples et fines, jamais épaisses
-- **Formes géométriques** : Cercles, rectangles, triangles minimalistes
-- **Textures subtiles** : Papier granuleux léger, rien de bruyant
-- **Icônes** : Minimalistes, cohérentes, monolignes
-
-### Inspiration Visuelle : Carnets de Voyage
-- Moodboard : Photos empilées, Polaroids, cartes dépliées
-- Effet : Organisé mais naturel, comme on feuillète un carnet
-- Détails : Dates, petites annotations, tampons, traces
-- Spacing : Beaucoup d'espace blanc entre éléments
-
-### Patterns & Textures
-- Pattern discret inspiré de cartes anciennes (très léger)
-- Texture papier vintage (utilisée avec parcimonie)
-- Traits manuscrits subtils (titres uniquement)
-- Pas d'effets 3D, pas de dégradés criards
-
----
-
-## 5. LOGO & MARK
-
-### Concept Logo
 **Symbole** : Table ronde vue de haut (club, convivialité) + ligne de voyage (mouvement, route)
 
 **Détails** :
 - Formes géométriques épurées
 - Bleu marine principal #001F3F
 - Accent turquoise #7ECCC4 pour la ligne de voyage
+- Orange/corail #E8A572 pour le point d'arrivée
 - Pas d'excès, pas de détails inutiles
 
-### Lockup Logo
-```
-[Logo géométrique]
-Le Club des Voyageurs
-Partir, revenir, raconter
-```
-
-### Logo Variations
-- Logo horizontal (avec tagline)
+**Variations** :
+- Logo horizontal (avec texte)
 - Logo vertical (stack)
-- Monochrome (bleu marine)
-- Symbole seul (pour favicon, avatar)
+- Symbole seul (favicon, avatar)
 - Version inversée (blanc sur fond foncé)
-
-### Logo Usage Rules
-- Espace minimum autour : 1x hauteur du logo
-- Pas d'étirement ni distorsion
-- Sur fond blanc cassé #F8F5F0 par défaut
-- Sur fond bleu marine #001F3F avec blanc/turquoise
+- Version minimaliste
+- Monochrome
 
 ---
 
-## 6. APPLICATIONS PRINCIPALES
+## 5. APPLICATIONS PRINCIPALES
 
 ### Website/Landing Page
 **Hero Section** :
@@ -170,11 +101,6 @@ Partir, revenir, raconter
 - Image héro : Photo atmosphérique grand format
 - Texte : Playfair Display blanc cassé sur overlay bleu marine transparent
 - CTA : Bouton turquoise #7ECCC4
-
-**Navigation** :
-- Fond : Blanc cassé
-- Texte : Bleu marine #001F3F
-- Hover : Turquoise #7ECCC4
 
 **Cards Épisodes** :
 - Fond : Beige #F5E6D3
@@ -194,11 +120,6 @@ Partir, revenir, raconter
 - Overlay : Bleu marine semi-transparent
 - Logo & Tagline : Centre
 
-**Video End Card** :
-- Fond : Bleu marine #001F3F
-- Logo : Centre blanc
-- "S'abonner" button : Turquoise #7ECCC4
-
 ### Email Newsletter
 **Header** :
 - Logo + "Le Club des Voyageurs" centré
@@ -216,26 +137,9 @@ Partir, revenir, raconter
 - Texte : Gris foncé
 - Social icons : Turquoise
 
-### Social Media Templates (Instagram, LinkedIn)
-**Post Standard** :
-- Fond : Blanc cassé ou beige gradient léger
-- Image : 70% de l'espace
-- Texte overlay : Playfair Display blanc
-- Logo petit : Coin supérieur
-
-**Stories** :
-- Fond : Photo + turquoise overlay semi-transparent
-- Texte : Blanc, lisible
-- Logo discret coin haut droit
-
-**Quote/Teaser** :
-- Fond : Bleu marine #001F3F
-- Citation : Lora italic blanc 24px
-- Attribution : Inter 14px turquoise
-
 ---
 
-## 7. STUDIO & PHYSIQUE
+## 6. STUDIO & PHYSIQUE
 
 ### Palette Studio
 - **Murs principaux** : Blanc cassé #F8F5F0 ou Beige #F5E6D3
@@ -249,14 +153,9 @@ Partir, revenir, raconter
 - Tagline : Playfair Display blanc 3-4m de haut
 - Élément graphique : Ligne turquoise traversante
 
-### Graphiques On-Screen
-- Chyrons : Fond bleu marine, texte blanc Inter
-- Lower thirds : Design épuré, turquoise accent
-- Inserts photo : Cadres fins turquoise ou beige
-
 ---
 
-## 8. PRINT COLLATERAL
+## 7. PRINT COLLATERAL
 
 ### Business Cards
 - Recto : Logo + contact minimal
@@ -268,51 +167,6 @@ Partir, revenir, raconter
 - En-tête : Logo petit + ligne turquoise
 - Fond : Blanc cassé très léger
 - Pied de page : Contact, social icons turquoise
-
-### Folders & Collateral
-- Couverture : Photo atmosphérique + logo overlay
-- Intérieur : Blanc cassé, texte Inter
-- Accents : Turquoise, orange corail pour highlights
-
----
-
-## 9. CHECKLIST D'IMPLÉMENTATION
-
-### Phase 1 : Design & Assets
-- [ ] Finaliser design logo 3 variations
-- [ ] Créer palette couleurs Pantone (print)
-- [ ] Templates YouTube (hero, thumbnail, end card)
-- [ ] Email template HTML
-- [ ] Social media templates
-- [ ] Business cards & letterhead
-
-### Phase 2 : Digital
-- [ ] Website homepage
-- [ ] YouTube channel branding
-- [ ] Instagram bio & highlights
-- [ ] LinkedIn cover
-- [ ] Email signature
-
-### Phase 3 : Studio
-- [ ] Brief designer studio
-- [ ] Palette murs & mobilier
-- [ ] Signalétique & graphics
-- [ ] Éclairage & ambiance
-
-### Phase 4 : Launch
-- [ ] Rollout website
-- [ ] Update social profiles
-- [ ] Brief équipe TONE OF VOICE
-- [ ] Créer premier contenu
-- [ ] Feedback & ajustements
-
----
-
-## 10. CONTACTS & VERSIONING
-
-**Document Version** : 1.0
-**Date** : 2026-06-06
-**Prochaine Révision** : Post-lancement
 
 ---
 

@@ -1,1 +1,287 @@
-<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Le Club des Voyageurs - Logo Preview</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n            background: linear-gradient(135deg, #F8F5F0 0%, #F5E6D3 100%);\n            min-height: 100vh;\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            padding: 40px 20px;\n        }\n\n        .container {\n            max-width: 1200px;\n            width: 100%;\n        }\n\n        h1 {\n            text-align: center;\n            color: #001F3F;\n            margin-bottom: 10px;\n            font-size: 48px;\n            font-weight: 700;\n        }\n\n        .tagline {\n            text-align: center;\n            color: #7ECCC4;\n            font-size: 20px;\n            margin-bottom: 60px;\n            font-style: italic;\n        }\n\n        .logo-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n            gap: 40px;\n            margin-bottom: 60px;\n        }\n\n        .logo-card {\n            background: white;\n            border-radius: 12px;\n            padding: 40px;\n            text-align: center;\n            box-shadow: 0 4px 20px rgba(0, 31, 63, 0.1);\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            transition: transform 0.3s ease, box-shadow 0.3s ease;\n        }\n\n        .logo-card:hover {\n            transform: translateY(-5px);\n            box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);\n        }\n\n        .logo-card h3 {\n            color: #001F3F;\n            font-size: 18px;\n            margin-bottom: 30px;\n            font-weight: 600;\n        }\n\n        svg {\n            max-width: 200px;\n            height: auto;\n        }\n\n        /* Variations */\n        .bg-navy {\n            background: #001F3F;\n        }\n\n        .bg-navy .logo-card {\n            background: #001F3F;\n            color: white;\n        }\n\n        .bg-navy h3 {\n            color: white;\n        }\n\n        .bg-navy svg {\n            filter: brightness(0) invert(1);\n        }\n\n        /* Color swatches */\n        .colors-section {\n            margin-top: 60px;\n            padding: 40px;\n            background: white;\n            border-radius: 12px;\n            box-shadow: 0 4px 20px rgba(0, 31, 63, 0.1);\n        }\n\n        .colors-section h2 {\n            color: #001F3F;\n            margin-bottom: 30px;\n            font-size: 28px;\n        }\n\n        .color-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n            gap: 20px;\n        }\n\n        .color-swatch {\n            border-radius: 8px;\n            overflow: hidden;\n            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n        }\n\n        .color-box {\n            width: 100%;\n            height: 100px;\n            display: flex;\n            align-items: flex-end;\n            justify-content: center;\n            color: white;\n            font-size: 12px;\n            font-weight: 600;\n            padding-bottom: 10px;\n            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);\n        }\n\n        .color-info {\n            padding: 15px;\n            background: #F8F5F0;\n            font-size: 12px;\n            color: #1A1A1A;\n        }\n\n        .color-info strong {\n            display: block;\n            margin-bottom: 5px;\n        }\n\n        .color-info span {\n            display: block;\n            font-family: 'Courier New', monospace;\n            color: #7ECCC4;\n        }\n\n        /* Footer */\n        .footer {\n            text-align: center;\n            margin-top: 60px;\n            color: #4A4A4A;\n            font-size: 14px;\n        }\n\n        .footer strong {\n            color: #001F3F;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <h1>Le Club des Voyageurs</h1>\n        <p class=\"tagline\">Partir, revenir, raconter</p>\n\n        <!-- Logo Variations -->\n        <div class=\"logo-grid\">\n            <!-- Variation 1: Simple Symbol -->\n            <div class=\"logo-card\">\n                <h3>Symbole Seul</h3>\n                <svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <!-- Table ronde (cercle) -->\n                    <circle cx=\"100\" cy=\"100\" r=\"70\" fill=\"none\" stroke=\"#001F3F\" stroke-width=\"3\"/>\n                    \n                    <!-- Accents internes (convivialité) -->\n                    <circle cx=\"100\" cy=\"100\" r=\"50\" fill=\"none\" stroke=\"#7ECCC4\" stroke-width=\"2\" opacity=\"0.6\"/>\n                    \n                    <!-- Ligne de voyage (diagonale) -->\n                    <line x1=\"45\" y1=\"155\" x2=\"155\" y2=\"45\" stroke=\"#7ECCC4\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n                    \n                    <!-- Petit détail (point final) -->\n                    <circle cx=\"155\" cy=\"45\" r=\"5\" fill=\"#E8A572\"/>\n                </svg>\n            </div>\n\n            <!-- Variation 2: With Text Horizontal -->\n            <div class=\"logo-card\">\n                <h3>Format Horizontal</h3>\n                <svg viewBox=\"0 0 400 120\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <!-- Table ronde -->\n                    <circle cx=\"60\" cy=\"60\" r=\"45\" fill=\"none\" stroke=\"#001F3F\" stroke-width=\"2.5\"/>\n                    <circle cx=\"60\" cy=\"60\" r=\"32\" fill=\"none\" stroke=\"#7ECCC4\" stroke-width=\"1.5\" opacity=\"0.6\"/>\n                    <line x1=\"25\" y1=\"95\" x2=\"95\" y2=\"25\" stroke=\"#7ECCC4\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n                    <circle cx=\"95\" cy=\"25\" r=\"3\" fill=\"#E8A572\"/>\n                    \n                    <!-- Text -->\n                    <text x=\"130\" y=\"50\" font-family=\"Playfair Display, serif\" font-size=\"24\" font-weight=\"700\" fill=\"#001F3F\">Le Club</text>\n                    <text x=\"130\" y=\"75\" font-family=\"Playfair Display, serif\" font-size=\"24\" font-weight=\"700\" fill=\"#001F3F\">des Voyageurs</text>\n                </svg>\n            </div>\n\n            <!-- Variation 3: With Tagline -->\n            <div class=\"logo-card\">\n                <h3>Avec Tagline</h3>\n                <svg viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <!-- Main circle -->\n                    <circle cx=\"140\" cy=\"100\" r=\"50\" fill=\"none\" stroke=\"#001F3F\" stroke-width=\"3\"/>\n                    <circle cx=\"140\" cy=\"100\" r=\"35\" fill=\"none\" stroke=\"#7ECCC4\" stroke-width=\"2\" opacity=\"0.6\"/>\n                    <line x1=\"95\" y1=\"145\" x2=\"185\" y2=\"55\" stroke=\"#7ECCC4\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n                    <circle cx=\"185\" cy=\"55\" r=\"4\" fill=\"#E8A572\"/>\n                    \n                    <!-- Text -->\n                    <text x=\"140\" y=\"185\" font-family=\"Playfair Display, serif\" font-size=\"18\" font-weight=\"700\" fill=\"#001F3F\" text-anchor=\"middle\">Le Club des Voyageurs</text>\n                    <text x=\"140\" y=\"210\" font-family=\"Lora, serif\" font-size=\"14\" font-style=\"italic\" fill=\"#7ECCC4\" text-anchor=\"middle\">Partir, revenir, raconter</text>\n                </svg>\n            </div>\n        </div>\n\n        <!-- Inverted variations -->\n        <div class=\"logo-grid bg-navy\" style=\"margin-bottom: 40px;\">\n            <!-- Variation 4: Inverted -->\n            <div class=\"logo-card\">\n                <h3>Version Inversée</h3>\n                <svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <!-- Table ronde -->\n                    <circle cx=\"100\" cy=\"100\" r=\"70\" fill=\"none\" stroke=\"white\" stroke-width=\"3\"/>\n                    <circle cx=\"100\" cy=\"100\" r=\"50\" fill=\"none\" stroke=\"#7ECCC4\" stroke-width=\"2\" opacity=\"0.8\"/>\n                    <line x1=\"45\" y1=\"155\" x2=\"155\" y2=\"45\" stroke=\"#7ECCC4\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n                    <circle cx=\"155\" cy=\"45\" r=\"5\" fill=\"#F9D5A8\"/>\n                </svg>\n            </div>\n\n            <!-- Variation 5: Minimal -->\n            <div class=\"logo-card\">\n                <h3>Version Minimaliste</h3>\n                <svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <!-- Just the essentials -->\n                    <circle cx=\"100\" cy=\"100\" r=\"60\" fill=\"none\" stroke=\"white\" stroke-width=\"2\"/>\n                    <line x1=\"50\" y1=\"150\" x2=\"150\" y2=\"50\" stroke=\"#7ECCC4\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n                    <circle cx=\"150\" cy=\"50\" r=\"3\" fill=\"#F9D5A8\"/>\n                </svg>\n            </div>\n\n            <!-- Variation 6: Monochrome -->\n            <div class=\"logo-card\">\n                <h3>Monochrome Blanc</h3>\n                <svg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <circle cx=\"100\" cy=\"100\" r=\"70\" fill=\"none\" stroke=\"white\" stroke-width=\"3\"/>\n                    <circle cx=\"100\" cy=\"100\" r=\"50\" fill=\"none\" stroke=\"white\" stroke-width=\"2\" opacity=\"0.6\"/>\n                    <line x1=\"45\" y1=\"155\" x2=\"155\" y2=\"45\" stroke=\"white\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n                    <circle cx=\"155\" cy=\"45\" r=\"5\" fill=\"white\"/>\n                </svg>\n            </div>\n        </div>\n\n        <!-- Color Palette -->\n        <div class=\"colors-section\">\n            <h2>🎨 Palette Couleurs Officielle</h2>\n            <div class=\"color-grid\">\n                <div class=\"color-swatch\">\n                    <div class=\"color-box\" style=\"background: #001F3F;\">Bleu Marine</div>\n                    <div class=\"color-info\">\n                        <strong>#001F3F</strong>\n                        <span>RGB: 0, 31, 63</span>\n                    </div>\n                </div>\n                <div class=\"color-swatch\">\n                    <div class=\"color-box\" style=\"background: #7ECCC4; color: #001F3F;\">Turquoise</div>\n                    <div class=\"color-info\">\n                        <strong>#7ECCC4</strong>\n                        <span>RGB: 126, 204, 196</span>\n                    </div>\n                </div>\n                <div class=\"color-swatch\">\n                    <div class=\"color-box\" style=\"background: #F5E6D3; color: #001F3F;\">Beige</div>\n                    <div class=\"color-info\">\n                        <strong>#F5E6D3</strong>\n                        <span>RGB: 245, 230, 211</span>\n                    </div>\n                </div>\n                <div class=\"color-swatch\">\n                    <div class=\"color-box\" style=\"background: #F8F5F0; color: #001F3F; border: 1px solid #D4C4B0;\">Blanc Cassé</div>\n                    <div class=\"color-info\">\n                        <strong>#F8F5F0</strong>\n                        <span>RGB: 248, 245, 240</span>\n                    </div>\n                </div>\n                <div class=\"color-swatch\">\n                    <div class=\"color-box\" style=\"background: #E8A572; color: white;\">Orange/Corail</div>\n                    <div class=\"color-info\">\n                        <strong>#E8A572</strong>\n                        <span>RGB: 232, 165, 114</span>\n                    </div>\n                </div>\n                <div class=\"color-swatch\">\n                    <div class=\"color-box\" style=\"background: #F9D5A8; color: #001F3F;\">Jaune Pâle</div>\n                    <div class=\"color-info\">\n                        <strong>#F9D5A8</strong>\n                        <span>RGB: 249, 213, 168</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <!-- Info -->\n        <div class=\"footer\">\n            <p><strong>Le Club des Voyageurs</strong> | Brand Guidelines v1.0 | 2026-06-06</p>\n            <p style=\"margin-top: 10px;\">Partir, revenir, raconter.</p>\n        </div>\n    </div>\n</body>\n</html>\n"
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Club des Voyageurs - Logo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #F8F5F0 0%, #F5E6D3 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #001F3F;
+            margin-bottom: 10px;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            text-align: center;
+            color: #7ECCC4;
+            font-size: 20px;
+            margin-bottom: 60px;
+            font-style: italic;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .logo-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 31, 63, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);
+        }
+
+        .logo-card h3 {
+            color: #001F3F;
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        svg {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .bg-navy {
+            background: #001F3F;
+        }
+
+        .bg-navy .logo-card {
+            background: #001F3F;
+            color: white;
+        }
+
+        .bg-navy h3 {
+            color: white;
+        }
+
+        .colors-section {
+            margin-top: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 31, 63, 0.1);
+        }
+
+        .colors-section h2 {
+            color: #001F3F;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .color-swatch {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-box {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding-bottom: 10px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .color-info {
+            padding: 15px;
+            background: #F8F5F0;
+            font-size: 12px;
+            color: #1A1A1A;
+        }
+
+        .color-info strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .color-info span {
+            display: block;
+            font-family: 'Courier New', monospace;
+            color: #7ECCC4;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #4A4A4A;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Le Club des Voyageurs</h1>
+        <p class="tagline">Partir, revenir, raconter</p>
+
+        <div class="logo-grid">
+            <div class="logo-card">
+                <h3>Symbole Seul</h3>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="#001F3F" stroke-width="3"/>
+                    <circle cx="100" cy="100" r="50" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.6"/>
+                    <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="155" cy="45" r="5" fill="#E8A572"/>
+                </svg>
+            </div>
+
+            <div class="logo-card">
+                <h3>Format Horizontal</h3>
+                <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="45" fill="none" stroke="#001F3F" stroke-width="2.5"/>
+                    <circle cx="60" cy="60" r="32" fill="none" stroke="#7ECCC4" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="25" y1="95" x2="95" y2="25" stroke="#7ECCC4" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="95" cy="25" r="3" fill="#E8A572"/>
+                    <text x="130" y="50" font-family="Playfair Display, serif" font-size="24" font-weight="700" fill="#001F3F">Le Club</text>
+                    <text x="130" y="75" font-family="Playfair Display, serif" font-size="24" font-weight="700" fill="#001F3F">des Voyageurs</text>
+                </svg>
+            </div>
+
+            <div class="logo-card">
+                <h3>Avec Tagline</h3>
+                <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="140" cy="100" r="50" fill="none" stroke="#001F3F" stroke-width="3"/>
+                    <circle cx="140" cy="100" r="35" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.6"/>
+                    <line x1="95" y1="145" x2="185" y2="55" stroke="#7ECCC4" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="185" cy="55" r="4" fill="#E8A572"/>
+                    <text x="140" y="185" font-family="Playfair Display, serif" font-size="18" font-weight="700" fill="#001F3F" text-anchor="middle">Le Club des Voyageurs</text>
+                    <text x="140" y="210" font-family="Lora, serif" font-size="14" font-style="italic" fill="#7ECCC4" text-anchor="middle">Partir, revenir, raconter</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="logo-grid bg-navy">
+            <div class="logo-card">
+                <h3>Version Inversée</h3>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="white" stroke-width="3"/>
+                    <circle cx="100" cy="100" r="50" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.8"/>
+                    <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="155" cy="45" r="5" fill="#F9D5A8"/>
+                </svg>
+            </div>
+
+            <div class="logo-card">
+                <h3>Version Minimaliste</h3>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="60" fill="none" stroke="white" stroke-width="2"/>
+                    <line x1="50" y1="150" x2="150" y2="50" stroke="#7ECCC4" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="150" cy="50" r="3" fill="#F9D5A8"/>
+                </svg>
+            </div>
+
+            <div class="logo-card">
+                <h3>Monochrome Blanc</h3>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="white" stroke-width="3"/>
+                    <circle cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+                    <line x1="45" y1="155" x2="155" y2="45" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="155" cy="45" r="5" fill="white"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="colors-section">
+            <h2>🎨 Palette Couleurs Officielle</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #001F3F;">Bleu Marine</div>
+                    <div class="color-info">
+                        <strong>#001F3F</strong>
+                        <span>RGB: 0, 31, 63</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #7ECCC4; color: #001F3F;">Turquoise</div>
+                    <div class="color-info">
+                        <strong>#7ECCC4</strong>
+                        <span>RGB: 126, 204, 196</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #F5E6D3; color: #001F3F;">Beige</div>
+                    <div class="color-info">
+                        <strong>#F5E6D3</strong>
+                        <span>RGB: 245, 230, 211</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #F8F5F0; color: #001F3F; border: 1px solid #D4C4B0;">Blanc Cassé</div>
+                    <div class="color-info">
+                        <strong>#F8F5F0</strong>
+                        <span>RGB: 248, 245, 240</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #E8A572; color: white;">Orange/Corail</div>
+                    <div class="color-info">
+                        <strong>#E8A572</strong>
+                        <span>RGB: 232, 165, 114</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #F9D5A8; color: #001F3F;">Jaune Pâle</div>
+                    <div class="color-info">
+                        <strong>#F9D5A8</strong>
+                        <span>RGB: 249, 213, 168</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Le Club des Voyageurs</strong> | Brand Guidelines v1.0 | 2026-06-06</p>
+            <p style="margin-top: 10px;">Partir, revenir, raconter.</p>
+        </div>
+    </div>
+</body>
+</html>
