@@ -1,0 +1,62 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Le Club des Voyageurs — Icône fond clair</title>
+  <defs>
+    <clipPath id="capsule-clip-l">
+      <ellipse cx="100" cy="78" rx="19" ry="27"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fond crème -->
+  <circle cx="100" cy="100" r="95" fill="#F2F0E8"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#1B2A4A" stroke-width="0.7" opacity="0.15"/>
+
+  <!-- Anneau supérieur turquoise -->
+  <rect x="85" y="46" width="30" height="8" rx="4" fill="#5BBCB8"/>
+
+  <!-- Corps de la capsule (navy) -->
+  <ellipse cx="100" cy="78" rx="19" ry="27" fill="#1B2A4A"/>
+
+  <!-- Grille fine clippée à la capsule -->
+  <g clip-path="url(#capsule-clip-l)" opacity="0.38">
+    <line x1="76" y1="54" x2="124" y2="54" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="59" x2="124" y2="59" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="64" x2="124" y2="64" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="69" x2="124" y2="69" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="74" x2="124" y2="74" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="79" x2="124" y2="79" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="84" x2="124" y2="84" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="89" x2="124" y2="89" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="94" x2="124" y2="94" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="76" y1="99" x2="124" y2="99" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="87"  y1="51" x2="87"  y2="105" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="95"  y1="51" x2="95"  y2="105" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="103" y1="51" x2="103" y2="105" stroke="#4A5A7A" stroke-width="0.75"/>
+    <line x1="111" y1="51" x2="111" y2="105" stroke="#4A5A7A" stroke-width="0.75"/>
+  </g>
+
+  <!-- Contour de la capsule -->
+  <ellipse cx="100" cy="78" rx="19" ry="27" fill="none" stroke="#344870" stroke-width="0.8"/>
+
+  <!-- Point gold central -->
+  <circle cx="100" cy="78" r="5" fill="#F5E08A"/>
+  <circle cx="98.7" cy="76.7" r="1.8" fill="rgba(255,255,200,0.6)"/>
+
+  <!-- Anneau inférieur turquoise -->
+  <rect x="85" y="101" width="30" height="8" rx="4" fill="#5BBCB8"/>
+
+  <!-- Col de transition -->
+  <rect x="93" y="110" width="14" height="6" rx="3" fill="#B8B0A0"/>
+
+  <!-- Poignée -->
+  <rect x="94" y="116" width="12" height="22" rx="5" fill="#1B2A4A"/>
+
+  <!-- Bague décorative poignée -->
+  <rect x="92" y="124" width="16" height="3" rx="1.5" fill="#5BBCB8" opacity="0.55"/>
+
+  <!-- Socle -->
+  <rect x="88" y="139" width="24" height="5" rx="2.5" fill="#B8B0A0"/>
+
+  <!-- Vague horizon -->
+  <path d="M 36 163 C 52 156 68 170 84 163 C 100 156 117 171 133 163 C 149 155 163 166 165 163"
+        fill="none" stroke="#1B2A4A" stroke-width="1.3" stroke-linecap="round" opacity="0.3"/>
+</svg>

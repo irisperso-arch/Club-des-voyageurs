@@ -1,287 +1,417 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Club des Voyageurs - Logo Preview</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Club des Voyageurs — Brand Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #F8F5F0 0%, #F5E6D3 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-        }
+    :root {
+      --navy:     #1B2A4A;
+      --cream:    #F2F0E8;
+      --teal:     #5BBCB8;
+      --gold:     #F5E08A;
+      --terra:    #C8896A;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Jost', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-        .container {
-            max-width: 1200px;
-            width: 100%;
-        }
+    body {
+      font-family: var(--font-sans);
+      background: #0f1a2e;
+      color: var(--cream);
+    }
 
-        h1 {
-            text-align: center;
-            color: #001F3F;
-            margin-bottom: 10px;
-            font-size: 48px;
-            font-weight: 700;
-        }
+    /* ── Section labels ── */
+    .section-label {
+      text-align: center;
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-bottom: 40px;
+    }
 
-        .tagline {
-            text-align: center;
-            color: #7ECCC4;
-            font-size: 20px;
-            margin-bottom: 60px;
-            font-style: italic;
-        }
+    /* ══════════════════════════════════════════
+       HERO — version fond sombre
+    ══════════════════════════════════════════ */
+    .hero-dark {
+      background: var(--navy);
+      padding: 80px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .logo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
+    .hero-dark .section-label { color: var(--cream); }
 
-        .logo-card {
-            background: white;
-            border-radius: 12px;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 31, 63, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .logos-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
 
-        .logo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 31, 63, 0.15);
-        }
+    .logo-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
 
-        .logo-card h3 {
-            color: #001F3F;
-            font-size: 18px;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
+    .logo-unit figcaption {
+      font-size: 11px;
+      letter-spacing: 2px;
+      opacity: 0.4;
+      text-transform: uppercase;
+    }
 
-        svg {
-            max-width: 200px;
-            height: auto;
-        }
+    .logo-unit.dark figcaption { color: var(--cream); }
+    .logo-unit.light figcaption { color: var(--navy); }
 
-        .bg-navy {
-            background: #001F3F;
-        }
+    .icon-wrap {
+      width: 180px;
+      height: 180px;
+    }
+    .icon-wrap img, .icon-wrap object {
+      width: 100%;
+      height: 100%;
+    }
 
-        .bg-navy .logo-card {
-            background: #001F3F;
-            color: white;
-        }
+    .full-wrap {
+      width: 240px;
+      height: 296px;
+    }
+    .full-wrap img, .full-wrap object {
+      width: 100%;
+      height: 100%;
+    }
 
-        .bg-navy h3 {
-            color: white;
-        }
+    /* ══════════════════════════════════════════
+       SECTION — version fond clair
+    ══════════════════════════════════════════ */
+    .hero-light {
+      background: var(--cream);
+      padding: 80px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .colors-section {
-            margin-top: 60px;
-            padding: 40px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 31, 63, 0.1);
-        }
+    .hero-light .section-label { color: var(--navy); }
 
-        .colors-section h2 {
-            color: #001F3F;
-            margin-bottom: 30px;
-            font-size: 28px;
-        }
+    /* ══════════════════════════════════════════
+       SECTION — icône tailles RS
+    ══════════════════════════════════════════ */
+    .sizes-section {
+      background: var(--navy);
+      padding: 80px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .color-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-        }
+    .sizes-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-        .color-swatch {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
 
-        .color-box {
-            width: 100%;
-            height: 100px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
-            padding-bottom: 10px;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-        }
+    .size-item span {
+      font-size: 10px;
+      letter-spacing: 2px;
+      opacity: 0.4;
+      text-transform: uppercase;
+      color: var(--cream);
+    }
 
-        .color-info {
-            padding: 15px;
-            background: #F8F5F0;
-            font-size: 12px;
-            color: #1A1A1A;
-        }
+    .size-item img { border-radius: 50%; }
 
-        .color-info strong {
-            display: block;
-            margin-bottom: 5px;
-        }
+    /* ══════════════════════════════════════════
+       SECTION — palette couleurs
+    ══════════════════════════════════════════ */
+    .palette-section {
+      background: #0f1a2e;
+      padding: 80px 40px;
+    }
 
-        .color-info span {
-            display: block;
-            font-family: 'Courier New', monospace;
-            color: #7ECCC4;
-        }
+    .palette-section .section-label { color: var(--cream); }
 
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-            color: #4A4A4A;
-            font-size: 14px;
-        }
-    </style>
+    .swatches {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .swatch {
+      width: 110px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .swatch-color {
+      height: 80px;
+    }
+
+    .swatch-info {
+      padding: 12px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .swatch-name {
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--cream);
+      display: block;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .swatch-hex {
+      font-size: 10px;
+      font-family: 'Courier New', monospace;
+      color: var(--teal);
+      opacity: 0.8;
+    }
+
+    /* ══════════════════════════════════════════
+       SECTION — typographie
+    ══════════════════════════════════════════ */
+    .typo-section {
+      background: var(--navy);
+      padding: 80px 40px;
+    }
+
+    .typo-section .section-label { color: var(--cream); }
+
+    .typo-demo {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .typo-le {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 6px;
+      color: var(--cream);
+      opacity: 0.45;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .typo-club {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 96px;
+      letter-spacing: 6px;
+      color: var(--cream);
+      line-height: 1;
+      display: block;
+    }
+
+    .typo-des {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 6px;
+      color: var(--cream);
+      opacity: 0.45;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .typo-voyageurs {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 48px;
+      letter-spacing: 6px;
+      color: var(--cream);
+      line-height: 1;
+      display: block;
+    }
+
+    .typo-rule {
+      width: 80px;
+      height: 1px;
+      background: var(--teal);
+      opacity: 0.6;
+      margin: 20px auto;
+    }
+
+    .typo-tagline {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 14px;
+      font-style: italic;
+      letter-spacing: 2px;
+      color: var(--terra);
+      display: block;
+    }
+
+    /* ══════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════ */
+    .footer {
+      background: #0f1a2e;
+      padding: 40px;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--cream);
+      opacity: 0.3;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Le Club des Voyageurs</h1>
-        <p class="tagline">Partir, revenir, raconter</p>
 
-        <div class="logo-grid">
-            <div class="logo-card">
-                <h3>Symbole Seul</h3>
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="70" fill="none" stroke="#001F3F" stroke-width="3"/>
-                    <circle cx="100" cy="100" r="50" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.6"/>
-                    <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="4" stroke-linecap="round"/>
-                    <circle cx="155" cy="45" r="5" fill="#E8A572"/>
-                </svg>
-            </div>
-
-            <div class="logo-card">
-                <h3>Format Horizontal</h3>
-                <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="60" cy="60" r="45" fill="none" stroke="#001F3F" stroke-width="2.5"/>
-                    <circle cx="60" cy="60" r="32" fill="none" stroke="#7ECCC4" stroke-width="1.5" opacity="0.6"/>
-                    <line x1="25" y1="95" x2="95" y2="25" stroke="#7ECCC4" stroke-width="2.5" stroke-linecap="round"/>
-                    <circle cx="95" cy="25" r="3" fill="#E8A572"/>
-                    <text x="130" y="50" font-family="Playfair Display, serif" font-size="24" font-weight="700" fill="#001F3F">Le Club</text>
-                    <text x="130" y="75" font-family="Playfair Display, serif" font-size="24" font-weight="700" fill="#001F3F">des Voyageurs</text>
-                </svg>
-            </div>
-
-            <div class="logo-card">
-                <h3>Avec Tagline</h3>
-                <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="140" cy="100" r="50" fill="none" stroke="#001F3F" stroke-width="3"/>
-                    <circle cx="140" cy="100" r="35" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.6"/>
-                    <line x1="95" y1="145" x2="185" y2="55" stroke="#7ECCC4" stroke-width="3" stroke-linecap="round"/>
-                    <circle cx="185" cy="55" r="4" fill="#E8A572"/>
-                    <text x="140" y="185" font-family="Playfair Display, serif" font-size="18" font-weight="700" fill="#001F3F" text-anchor="middle">Le Club des Voyageurs</text>
-                    <text x="140" y="210" font-family="Lora, serif" font-size="14" font-style="italic" fill="#7ECCC4" text-anchor="middle">Partir, revenir, raconter</text>
-                </svg>
-            </div>
+  <!-- ═══ VERSION FOND SOMBRE ═══ -->
+  <section class="hero-dark">
+    <p class="section-label">Version fond sombre</p>
+    <div class="logos-row">
+      <figure class="logo-unit dark">
+        <div class="icon-wrap">
+          <img src="logo-icon-dark.svg" alt="Icône Le Club des Voyageurs — fond sombre">
         </div>
-
-        <div class="logo-grid bg-navy">
-            <div class="logo-card">
-                <h3>Version Inversée</h3>
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="70" fill="none" stroke="white" stroke-width="3"/>
-                    <circle cx="100" cy="100" r="50" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.8"/>
-                    <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="4" stroke-linecap="round"/>
-                    <circle cx="155" cy="45" r="5" fill="#F9D5A8"/>
-                </svg>
-            </div>
-
-            <div class="logo-card">
-                <h3>Version Minimaliste</h3>
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="60" fill="none" stroke="white" stroke-width="2"/>
-                    <line x1="50" y1="150" x2="150" y2="50" stroke="#7ECCC4" stroke-width="3" stroke-linecap="round"/>
-                    <circle cx="150" cy="50" r="3" fill="#F9D5A8"/>
-                </svg>
-            </div>
-
-            <div class="logo-card">
-                <h3>Monochrome Blanc</h3>
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="70" fill="none" stroke="white" stroke-width="3"/>
-                    <circle cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
-                    <line x1="45" y1="155" x2="155" y2="45" stroke="white" stroke-width="4" stroke-linecap="round"/>
-                    <circle cx="155" cy="45" r="5" fill="white"/>
-                </svg>
-            </div>
+        <figcaption>Icône RS / YouTube</figcaption>
+      </figure>
+      <figure class="logo-unit dark">
+        <div class="full-wrap">
+          <img src="logo-full-dark.svg" alt="Logo complet Le Club des Voyageurs — fond sombre">
         </div>
-
-        <div class="colors-section">
-            <h2>🎨 Palette Couleurs Officielle</h2>
-            <div class="color-grid">
-                <div class="color-swatch">
-                    <div class="color-box" style="background: #001F3F;">Bleu Marine</div>
-                    <div class="color-info">
-                        <strong>#001F3F</strong>
-                        <span>RGB: 0, 31, 63</span>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-box" style="background: #7ECCC4; color: #001F3F;">Turquoise</div>
-                    <div class="color-info">
-                        <strong>#7ECCC4</strong>
-                        <span>RGB: 126, 204, 196</span>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-box" style="background: #F5E6D3; color: #001F3F;">Beige</div>
-                    <div class="color-info">
-                        <strong>#F5E6D3</strong>
-                        <span>RGB: 245, 230, 211</span>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-box" style="background: #F8F5F0; color: #001F3F; border: 1px solid #D4C4B0;">Blanc Cassé</div>
-                    <div class="color-info">
-                        <strong>#F8F5F0</strong>
-                        <span>RGB: 248, 245, 240</span>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-box" style="background: #E8A572; color: white;">Orange/Corail</div>
-                    <div class="color-info">
-                        <strong>#E8A572</strong>
-                        <span>RGB: 232, 165, 114</span>
-                    </div>
-                </div>
-                <div class="color-swatch">
-                    <div class="color-box" style="background: #F9D5A8; color: #001F3F;">Jaune Pâle</div>
-                    <div class="color-info">
-                        <strong>#F9D5A8</strong>
-                        <span>RGB: 249, 213, 168</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p><strong>Le Club des Voyageurs</strong> | Brand Guidelines v1.0 | 2026-06-06</p>
-            <p style="margin-top: 10px;">Partir, revenir, raconter.</p>
-        </div>
+        <figcaption>Logo complet</figcaption>
+      </figure>
     </div>
+  </section>
+
+  <!-- ═══ VERSION FOND CLAIR ═══ -->
+  <section class="hero-light">
+    <p class="section-label">Version fond clair</p>
+    <div class="logos-row">
+      <figure class="logo-unit light">
+        <div class="icon-wrap">
+          <img src="logo-icon-light.svg" alt="Icône Le Club des Voyageurs — fond clair">
+        </div>
+        <figcaption>Icône RS / YouTube</figcaption>
+      </figure>
+      <figure class="logo-unit light">
+        <div class="full-wrap">
+          <img src="logo-full-light.svg" alt="Logo complet Le Club des Voyageurs — fond clair">
+        </div>
+        <figcaption>Logo complet</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ ICÔNE — TAILLES RÉSEAUX SOCIAUX ═══ -->
+  <section class="sizes-section">
+    <p class="section-label">Icône — Tailles réseaux sociaux</p>
+    <div class="sizes-row">
+      <div class="size-item">
+        <img src="logo-icon-dark.svg" width="180" height="180" alt="">
+        <span>180 × 180</span>
+      </div>
+      <div class="size-item">
+        <img src="logo-icon-dark.svg" width="120" height="120" alt="">
+        <span>120 × 120</span>
+      </div>
+      <div class="size-item">
+        <img src="logo-icon-dark.svg" width="80" height="80" alt="">
+        <span>80 × 80</span>
+      </div>
+      <div class="size-item">
+        <img src="logo-icon-dark.svg" width="48" height="48" alt="">
+        <span>48 × 48</span>
+      </div>
+      <div class="size-item">
+        <img src="logo-icon-dark.svg" width="32" height="32" alt="">
+        <span>32 × 32</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PALETTE COULEURS ═══ -->
+  <section class="palette-section">
+    <p class="section-label">Palette officielle</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1B2A4A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Navy</span>
+          <span class="swatch-hex">#1B2A4A</span>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F2F0E8;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Crème</span>
+          <span class="swatch-hex">#F2F0E8</span>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#5BBCB8;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Turquoise</span>
+          <span class="swatch-hex">#5BBCB8</span>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F5E08A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Gold</span>
+          <span class="swatch-hex">#F5E08A</span>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#C8896A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Terracotta</span>
+          <span class="swatch-hex">#C8896A</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TYPOGRAPHIE ═══ -->
+  <section class="typo-section">
+    <p class="section-label">Hiérarchie typographique</p>
+    <div class="typo-demo">
+      <span class="typo-le">Le</span>
+      <span class="typo-club">CLUB</span>
+      <span class="typo-des">Des</span>
+      <span class="typo-voyageurs">VOYAGEURS</span>
+      <div class="typo-rule"></div>
+      <span class="typo-tagline">Partir, revenir, raconter</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Le Club des Voyageurs &nbsp;·&nbsp; Brand Identity v2.0 &nbsp;·&nbsp; 2026
+  </footer>
+
 </body>
 </html>
