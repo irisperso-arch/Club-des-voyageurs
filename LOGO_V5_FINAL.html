@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — Logo v5</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family:'Inter',-apple-system,sans-serif;
+        background:#2D3B2D;
+        min-height:100vh;
+        display:flex; flex-direction:column;
+        align-items:center; justify-content:center;
+        padding:40px 20px; gap:50px;
+    }
+    h2 { color:#F5E6D3; font-size:15px; font-weight:400; letter-spacing:2px; text-transform:uppercase; text-align:center; margin-bottom:20px; }
+    .grid { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; align-items:flex-start; }
+    .item { display:flex; flex-direction:column; align-items:center; gap:12px; }
+    .item span { color:#8A9E8A; font-size:12px; letter-spacing:1px; text-transform:uppercase; }
+    svg { height:auto; }
+    .footer { color:#5A7A5A; font-size:12px; letter-spacing:1px; text-align:center; }
+</style>
+</head>
+<body>
+
+    <h2>Le Club des Voyageurs — Logo</h2>
+
+    <div class="grid">
+
+        <!-- Version principale : fond sauge -->
+        <div class="item">
+            <span>Principal — fond sauge</span>
+            <svg width="340" height="340" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="bgClip">
+                        <rect x="0" y="0" width="340" height="340" rx="28"/>
+                    </clipPath>
+                </defs>
+
+                <!-- Background -->
+                <rect x="0" y="0" width="340" height="340" rx="28" fill="#8A9E85"/>
+
+                <!-- Oval frame -->
+                <ellipse cx="170" cy="162" rx="128" ry="148" fill="none" stroke="#D4845A" stroke-width="2.2"/>
+
+                <!-- Compass rose at top of oval -->
+                <g transform="translate(170, 42)">
+                    <!-- 8 branches -->
+                    <polygon points="0,-18 4,-6 0,-2 -4,-6" fill="#D4845A"/>
+                    <polygon points="0,18 4,6 0,2 -4,6" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="-18,0 -6,4 -2,0 -6,-4" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="18,0 6,4 2,0 6,-4" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="-12,-12 -4,-6 -2,-2 -6,-4" fill="#D4845A" opacity="0.55"/>
+                    <polygon points="12,-12 4,-6 2,-2 6,-4" fill="#D4845A" opacity="0.55"/>
+                    <polygon points="-12,12 -4,6 -2,2 -6,4" fill="#D4845A" opacity="0.55"/>
+                    <polygon points="12,12 4,6 2,2 6,4" fill="#D4845A" opacity="0.55"/>
+                    <circle cx="0" cy="0" r="3.5" fill="#D4845A"/>
+                    <circle cx="0" cy="0" r="1.5" fill="#F5E6D3"/>
+                </g>
+
+                <!-- Line under compass -->
+                <line x1="120" y1="68" x2="220" y2="68" stroke="#D4845A" stroke-width="0.8" opacity="0.6"/>
+
+                <!-- Text -->
+                <text x="170" y="102" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="11" font-weight="400" letter-spacing="5" fill="#F5E6D3" opacity="0.85">LE</text>
+                <text x="170" y="138" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="700" fill="#1C2E1C" letter-spacing="2">CLUB</text>
+                <text x="170" y="163" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="13" font-weight="400" letter-spacing="7" fill="#F5E6D3" opacity="0.85">DES</text>
+                <text x="170" y="204" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="30" font-weight="700" fill="#1C2E1C" letter-spacing="1">VOYAGEURS</text>
+
+                <!-- Winding road at bottom -->
+                <g opacity="0.75">
+                    <path d="M 148 310 C 152 285, 158 265, 162 245 C 164 238, 165 232, 166 228"
+                          fill="none" stroke="#D4C4A8" stroke-width="12" stroke-linecap="round"/>
+                    <path d="M 192 310 C 188 285, 182 265, 178 245 C 176 238, 175 232, 174 228"
+                          fill="none" stroke="#D4C4A8" stroke-width="12" stroke-linecap="round"/>
+                    <path d="M 148 310 C 152 285, 158 265, 162 245 C 164 238, 165 232, 166 228"
+                          fill="none" stroke="#C2B090" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M 192 310 C 188 285, 182 265, 178 245 C 176 238, 175 232, 174 228"
+                          fill="none" stroke="#C2B090" stroke-width="1.5" stroke-linecap="round"/>
+                    <!-- road surface fill -->
+                    <path d="M 148 310 C 152 285, 158 265, 162 245 C 164 238, 165 232, 166 228 L 174 228 C 175 232, 176 238, 178 245 C 182 265, 188 285, 192 310 Z"
+                          fill="#D4C4A8"/>
+                    <!-- center dashes -->
+                    <line x1="170" y1="305" x2="170" y2="292" stroke="#C2B090" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+                    <line x1="169.5" y1="278" x2="169.5" y2="265" stroke="#C2B090" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+                    <line x1="169.5" y1="250" x2="169.5" y2="240" stroke="#C2B090" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+                </g>
+
+                <!-- Tagline -->
+                <text x="170" y="330" text-anchor="middle" font-family="Lora, Georgia, serif" font-size="10" font-style="italic" fill="#F5E6D3" opacity="0.75" letter-spacing="1.5">Partir, revenir, raconter</text>
+            </svg>
+        </div>
+
+        <!-- Version inversée : fond sombre -->
+        <div class="item">
+            <span>Inversé — fond sombre</span>
+            <svg width="340" height="340" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="340" height="340" rx="28" fill="#1C2E1C"/>
+                <ellipse cx="170" cy="162" rx="128" ry="148" fill="none" stroke="#D4845A" stroke-width="2.2"/>
+                <g transform="translate(170, 42)">
+                    <polygon points="0,-18 4,-6 0,-2 -4,-6" fill="#D4845A"/>
+                    <polygon points="0,18 4,6 0,2 -4,6" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="-18,0 -6,4 -2,0 -6,-4" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="18,0 6,4 2,0 6,-4" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="-12,-12 -4,-6 -2,-2 -6,-4" fill="#D4845A" opacity="0.55"/>
+                    <polygon points="12,-12 4,-6 2,-2 6,-4" fill="#D4845A" opacity="0.55"/>
+                    <polygon points="-12,12 -4,6 -2,2 -6,4" fill="#D4845A" opacity="0.55"/>
+                    <polygon points="12,12 4,6 2,2 6,4" fill="#D4845A" opacity="0.55"/>
+                    <circle cx="0" cy="0" r="3.5" fill="#D4845A"/>
+                    <circle cx="0" cy="0" r="1.5" fill="#F5E6D3"/>
+                </g>
+                <line x1="120" y1="68" x2="220" y2="68" stroke="#D4845A" stroke-width="0.8" opacity="0.6"/>
+                <text x="170" y="102" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="11" font-weight="400" letter-spacing="5" fill="#F5E6D3" opacity="0.85">LE</text>
+                <text x="170" y="138" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="700" fill="#8A9E85" letter-spacing="2">CLUB</text>
+                <text x="170" y="163" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="13" font-weight="400" letter-spacing="7" fill="#F5E6D3" opacity="0.85">DES</text>
+                <text x="170" y="204" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="30" font-weight="700" fill="#8A9E85" letter-spacing="1">VOYAGEURS</text>
+                <g opacity="0.65">
+                    <path d="M 148 310 C 152 285, 158 265, 162 245 C 164 238, 165 232, 166 228 L 174 228 C 175 232, 176 238, 178 245 C 182 265, 188 285, 192 310 Z" fill="#3A4F3A"/>
+                    <line x1="170" y1="305" x2="170" y2="292" stroke="#5A7A5A" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+                    <line x1="169.5" y1="278" x2="169.5" y2="265" stroke="#5A7A5A" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+                    <line x1="169.5" y1="250" x2="169.5" y2="240" stroke="#5A7A5A" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+                </g>
+                <text x="170" y="330" text-anchor="middle" font-family="Lora, Georgia, serif" font-size="10" font-style="italic" fill="#F5E6D3" opacity="0.75" letter-spacing="1.5">Partir, revenir, raconter</text>
+            </svg>
+        </div>
+
+        <!-- Avatar YouTube -->
+        <div class="item">
+            <span>Avatar YouTube</span>
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="100" fill="#8A9E85"/>
+                <ellipse cx="100" cy="96" rx="76" ry="88" fill="none" stroke="#D4845A" stroke-width="1.8"/>
+                <g transform="translate(100, 26)">
+                    <polygon points="0,-11 2.5,-4 0,-1.5 -2.5,-4" fill="#D4845A"/>
+                    <polygon points="0,11 2.5,4 0,1.5 -2.5,4" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="-11,0 -4,2.5 -1.5,0 -4,-2.5" fill="#D4845A" opacity="0.7"/>
+                    <polygon points="11,0 4,2.5 1.5,0 4,-2.5" fill="#D4845A" opacity="0.7"/>
+                    <circle cx="0" cy="0" r="2.5" fill="#D4845A"/>
+                    <circle cx="0" cy="0" r="1" fill="#F5E6D3"/>
+                </g>
+                <text x="100" y="67" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="7" letter-spacing="3" fill="#F5E6D3" opacity="0.85">LE</text>
+                <text x="100" y="93" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="32" font-weight="700" fill="#1C2E1C" letter-spacing="1">CLUB</text>
+                <text x="100" y="109" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="8" letter-spacing="4" fill="#F5E6D3" opacity="0.85">DES</text>
+                <text x="100" y="130" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="17" font-weight="700" fill="#1C2E1C" letter-spacing="0.5">VOYAGEURS</text>
+                <g opacity="0.7">
+                    <path d="M 87 186 C 89 170, 93 156, 95 146 C 96 142, 97 139, 98 137 L 102 137 C 103 139, 104 142, 105 146 C 107 156, 111 170, 113 186 Z" fill="#D4C4A8"/>
+                </g>
+                <text x="100" y="197" text-anchor="middle" font-family="Lora, Georgia, serif" font-size="6" font-style="italic" fill="#F5E6D3" opacity="0.7" letter-spacing="0.5">Partir, revenir, raconter</text>
+            </svg>
+        </div>
+
+    </div>
+
+    <div class="footer">LE CLUB DES VOYAGEURS — Logo v5 — 2026-06-07</div>
+
+</body>
+</html>
