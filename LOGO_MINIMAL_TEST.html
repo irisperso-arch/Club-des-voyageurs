@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — Versions minimalistes</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family:'Inter',-apple-system,sans-serif;
+        background:#1C2E1C;
+        min-height:100vh;
+        padding:50px 20px;
+        display:flex; flex-direction:column; align-items:center; gap:40px;
+    }
+    h1 { color:#F7F5F0; font-size:17px; font-weight:400; letter-spacing:4px; text-transform:uppercase; text-align:center; }
+    .sub { color:#8A9E85; font-size:13px; font-style:italic; text-align:center; max-width:680px; margin-top:-28px; }
+    .row { display:flex; flex-wrap:wrap; gap:32px; justify-content:center; }
+    .item { display:flex; flex-direction:column; align-items:center; gap:12px; }
+    .item span { color:#6A8A6A; font-size:10px; letter-spacing:3px; text-transform:uppercase; text-align:center; }
+    .item p { color:#5A7A5A; font-size:12px; line-height:1.6; text-align:center; max-width:200px; }
+    .footer { color:#3A5A3A; font-size:11px; letter-spacing:2px; }
+</style>
+</head>
+<body>
+
+<h1>4 versions — sans courbe complexe</h1>
+<p class="sub">Retour à l'essentiel. Aucune courbe de Bézier compliquée — seulement des formes qu'un code peut rendre proprement.</p>
+
+<div class="row">
+
+    <!-- A : Arc seul — le plus épuré -->
+    <div class="item">
+        <span>A — L'arc seul</span>
+        <svg width="220" height="240" viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="300" rx="18" fill="#C9D6CA"/>
+            <!-- Clean open arc, gap at upper-right -->
+            <path d="M 165 62 A 60 60 0 1 0 212 112"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <line x1="72" y1="202" x2="208" y2="202" stroke="#01466D" stroke-width="0.8" opacity="0.3"/>
+            <text x="140" y="224" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">LE</text>
+            <text x="140" y="256" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="42" font-weight="700" letter-spacing="2" fill="#01466D">CLUB</text>
+            <text x="140" y="272" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">DES</text>
+            <text x="140" y="292" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="21" font-weight="700" letter-spacing="1" fill="#01466D">VOYAGEURS</text>
+        </svg>
+        <p>Juste le cercle ouvert. L'ouverture dit le départ sans avoir besoin d'un trait supplémentaire. Très épuré.</p>
+    </div>
+
+    <!-- B : Arc + point de départ -->
+    <div class="item">
+        <span>B — Arc + point</span>
+        <svg width="220" height="240" viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="300" rx="18" fill="#C9D6CA"/>
+            <path d="M 165 62 A 60 60 0 1 0 212 112"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <!-- Single dot marking the departure point in the gap -->
+            <circle cx="200" cy="82" r="6" fill="#01466D"/>
+            <line x1="72" y1="202" x2="208" y2="202" stroke="#01466D" stroke-width="0.8" opacity="0.3"/>
+            <text x="140" y="224" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">LE</text>
+            <text x="140" y="256" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="42" font-weight="700" letter-spacing="2" fill="#01466D">CLUB</text>
+            <text x="140" y="272" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">DES</text>
+            <text x="140" y="292" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="21" font-weight="700" letter-spacing="1" fill="#01466D">VOYAGEURS</text>
+        </svg>
+        <p>L'ouverture est marquée par un seul point — la destination, le cap. Sobre et précis.</p>
+    </div>
+
+    <!-- C : Arc + trait droit -->
+    <div class="item">
+        <span>C — Arc + trait</span>
+        <svg width="220" height="240" viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="300" rx="18" fill="#C9D6CA"/>
+            <path d="M 165 62 A 60 60 0 1 0 212 112"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <!-- Clean straight line extending from arc endpoint -->
+            <line x1="212" y1="112" x2="255" y2="60" stroke="#01466D" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="255" cy="60" r="5" fill="#01466D" opacity="0.7"/>
+            <line x1="72" y1="202" x2="208" y2="202" stroke="#01466D" stroke-width="0.8" opacity="0.3"/>
+            <text x="140" y="224" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">LE</text>
+            <text x="140" y="256" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="42" font-weight="700" letter-spacing="2" fill="#01466D">CLUB</text>
+            <text x="140" y="272" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">DES</text>
+            <text x="140" y="292" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="21" font-weight="700" letter-spacing="1" fill="#01466D">VOYAGEURS</text>
+        </svg>
+        <p>Un trait droit part du bout de l'arc — pas de courbe, donc pas de problème. Direct comme une route.</p>
+    </div>
+
+    <!-- D : Un seul tracé continu -->
+    <div class="item">
+        <span>D — Un seul geste</span>
+        <svg width="220" height="240" viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="300" rx="18" fill="#C9D6CA"/>
+            <!-- Single continuous stroke: line enters, curves into circle, exits -->
+            <!-- Enters from bottom-left, curves into the arc, exits upper-right -->
+            <path d="M 95 190 A 60 60 0 1 1 212 112 L 256 62"
+                  fill="none" stroke="#E3894A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="256" cy="62" r="5" fill="#01466D"/>
+            <line x1="72" y1="202" x2="208" y2="202" stroke="#01466D" stroke-width="0.8" opacity="0.3"/>
+            <text x="140" y="224" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">LE</text>
+            <text x="140" y="256" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="42" font-weight="700" letter-spacing="2" fill="#01466D">CLUB</text>
+            <text x="140" y="272" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">DES</text>
+            <text x="140" y="292" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                  font-size="21" font-weight="700" letter-spacing="1" fill="#01466D">VOYAGEURS</text>
+        </svg>
+        <p>Un seul trait continu — entre dans le cercle, fait la boucle du club, en repart. Comme le symbole VW : une seule forme qui dit tout.</p>
+    </div>
+
+</div>
+
+<div class="footer">— A, B, C ou D ?</div>
+
+</body>
+</html>
