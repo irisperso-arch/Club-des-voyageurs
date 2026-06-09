@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — C, V et monogramme CV (v7)</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family:'Inter',-apple-system,sans-serif;
+        background:#1C2E1C;
+        min-height:100vh;
+        padding:50px 20px;
+        display:flex; flex-direction:column; align-items:center; gap:55px;
+    }
+    h1 { color:#F5E6D3; font-size:20px; font-weight:400; letter-spacing:3px; text-transform:uppercase; text-align:center; }
+    .sub { color:#8A9E85; font-size:13px; font-style:italic; text-align:center; max-width:680px; margin-top:-38px; }
+    .section { width:100%; max-width:1100px; }
+    .section h2 { color:#D4845A; font-size:11px; letter-spacing:4px; text-transform:uppercase; margin-bottom:24px; text-align:center; }
+    .row { display:flex; flex-wrap:wrap; gap:24px; justify-content:center; }
+    .card {
+        background:#2D3B2D; border-radius:16px; padding:30px 26px;
+        display:flex; flex-direction:column; align-items:center; gap:12px;
+        box-shadow:0 4px 20px rgba(0,0,0,0.3);
+    }
+    .card span { color:#8A9E85; font-size:11px; letter-spacing:2px; text-transform:uppercase; text-align:center; }
+    .card p { color:#6A8A6A; font-size:12px; line-height:1.6; text-align:center; max-width:210px; }
+    svg { height:auto; }
+    .footer { color:#3A5A3A; font-size:11px; letter-spacing:2px; text-align:center; }
+</style>
+</head>
+<body>
+
+<h1>C · V · Monogramme</h1>
+<p class="sub">Le V de Voyageurs est peut-être la lettre la plus forte des deux — directionnel, aventureux, il dit QUI vous êtes. Le C dit la structure. Le monogramme CV dit tout.</p>
+
+<!-- Section 1: V seul -->
+<div class="section">
+    <h2>1 — Le V seul, comme marque principale</h2>
+    <div class="row">
+
+        <div class="card">
+            <span>V boussole</span>
+            <svg width="180" height="180" viewBox="0 0 200 200">
+                <!-- V shape, arms are compass needles -->
+                <line x1="100" y1="155" x2="48" y2="52" stroke="#8A9E85" stroke-width="11" stroke-linecap="round"/>
+                <line x1="100" y1="155" x2="152" y2="52" stroke="#8A9E85" stroke-width="11" stroke-linecap="round"/>
+                <!-- Compass tips at top of each arm -->
+                <polygon points="48,52 52,65 44,65" fill="#D4845A"/>
+                <polygon points="152,52 156,65 148,65" fill="#D4845A" opacity="0.55"/>
+                <!-- Destination dot at the tip -->
+                <circle cx="100" cy="155" r="7" fill="#D4845A"/>
+                <circle cx="100" cy="155" r="3" fill="#F5E6D3"/>
+            </svg>
+            <p>Les deux bras du V sont des aiguilles de boussole — N et E, deux caps, un point de convergence (le voyage).</p>
+        </div>
+
+        <div class="card">
+            <span>V route — vue du ciel</span>
+            <svg width="180" height="180" viewBox="0 0 200 200">
+                <!-- V route lines (two paths converging) -->
+                <path d="M 50 45 C 60 80, 80 120, 100 155" fill="none" stroke="#8A9E85" stroke-width="11" stroke-linecap="round"/>
+                <path d="M 150 45 C 140 80, 120 120, 100 155" fill="none" stroke="#8A9E85" stroke-width="11" stroke-linecap="round"/>
+                <!-- Road dashes center -->
+                <path d="M 82 112 C 88 128, 95 142, 100 155" fill="none" stroke="#2D3B2D" stroke-width="2.5" stroke-dasharray="6 5" stroke-linecap="round" opacity="0.8"/>
+                <!-- Destination -->
+                <circle cx="100" cy="155" r="7" fill="#D4845A"/>
+                <circle cx="100" cy="155" r="3" fill="#F5E6D3"/>
+                <!-- Origin dots top -->
+                <circle cx="50" cy="45" r="4" fill="#8A9E85" opacity="0.6"/>
+                <circle cx="150" cy="45" r="4" fill="#8A9E85" opacity="0.6"/>
+            </svg>
+            <p>Deux routes qui convergent vers une destination — le V comme carrefour des voyageurs qui se retrouvent pour raconter.</p>
+        </div>
+
+        <div class="card">
+            <span>V serif — typographique</span>
+            <svg width="180" height="180" viewBox="0 0 200 200">
+                <text x="100" y="155" text-anchor="middle"
+                      font-family="Playfair Display, Georgia, serif"
+                      font-size="150" font-weight="700" fill="#8A9E85" letter-spacing="-4">V</text>
+                <!-- Small compass inside V -->
+                <g transform="translate(100, 108)">
+                    <polygon points="0,-12 2.5,-4 0,-1 -2.5,-4" fill="#D4845A"/>
+                    <polygon points="-12,0 -4,2.5 -1.5,0 -4,-2.5" fill="#D4845A" opacity="0.6"/>
+                    <polygon points="12,0 4,2.5 1.5,0 4,-2.5" fill="#D4845A" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="3" fill="#D4845A"/>
+                    <circle cx="0" cy="0" r="1.2" fill="#F5E6D3"/>
+                </g>
+            </svg>
+            <p>V en Playfair Display — même traitement que le C de C dans l'air mais avec la rose des vents au creux de la lettre.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Section 2: Monogramme CV -->
+<div class="section">
+    <h2>2 — Le monogramme C+V — les deux lettres inséparables</h2>
+    <div class="row">
+
+        <div class="card">
+            <span>C embrasse le V</span>
+            <svg width="180" height="200" viewBox="0 0 200 210">
+                <!-- C arc (opens right) -->
+                <path d="M 128 42 A 58 58 0 1 0 128 168" fill="none" stroke="#8A9E85" stroke-width="11" stroke-linecap="round"/>
+                <!-- V inside, right arm passes through C opening -->
+                <line x1="70" y1="52" x2="105" y2="148" stroke="#D4845A" stroke-width="9" stroke-linecap="round"/>
+                <line x1="140" y1="52" x2="105" y2="148" stroke="#D4845A" stroke-width="9" stroke-linecap="round"/>
+                <!-- Destination dot -->
+                <circle cx="105" cy="148" r="6" fill="#F5E6D3"/>
+            </svg>
+            <p>Le C (vert sauge) embrasse et contient le V (corail) — "le Club qui porte ses Voyageurs". Le V pointe vers la destination au bas.</p>
+        </div>
+
+        <div class="card">
+            <span>CV partagent un trait</span>
+            <svg width="180" height="200" viewBox="0 0 200 210">
+                <!-- C arc -->
+                <path d="M 118 44 A 52 52 0 1 0 118 156" fill="none" stroke="#8A9E85" stroke-width="10" stroke-linecap="round"/>
+                <!-- V — left arm is the shared stroke with C's right gap area -->
+                <line x1="118" y1="44" x2="150" y2="145" stroke="#D4845A" stroke-width="10" stroke-linecap="round"/>
+                <line x1="150" y1="145" x2="180" y2="44" stroke="#D4845A" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+                <!-- Connection dot -->
+                <circle cx="150" cy="145" r="6" fill="#D4845A"/>
+                <circle cx="150" cy="145" r="2.5" fill="#F5E6D3"/>
+            </svg>
+            <p>Le bras gauche du V part directement du bout du C — les deux lettres partagent un même point de départ. Un seul geste continu.</p>
+        </div>
+
+        <div class="card">
+            <span>CV dans l'ovale — version finale</span>
+            <svg width="180" height="200" viewBox="0 0 200 215">
+                <!-- Oval badge -->
+                <ellipse cx="100" cy="100" rx="88" ry="96" fill="#8A9E85"/>
+                <ellipse cx="100" cy="100" rx="88" ry="96" fill="none" stroke="#D4845A" stroke-width="2.5"/>
+                <!-- C -->
+                <path d="M 105 44 A 40 40 0 1 0 105 116" fill="none" stroke="#1C2E1C" stroke-width="9" stroke-linecap="round"/>
+                <!-- V -->
+                <line x1="105" y1="44" x2="130" y2="120" stroke="#D4845A" stroke-width="8" stroke-linecap="round"/>
+                <line x1="155" y1="44" x2="130" y2="120" stroke="#D4845A" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+                <circle cx="130" cy="120" r="5" fill="#F5E6D3"/>
+                <!-- Tagline -->
+                <text x="100" y="190" text-anchor="middle" font-family="Lora, Georgia, serif"
+                      font-size="9.5" font-style="italic" fill="#F5E6D3" opacity="0.8" letter-spacing="1">Partir, revenir, raconter</text>
+            </svg>
+            <p>Le monogramme CV dans le badge ovale — le C sombre ancre, le V corail s'élève. Complet en une seule forme.</p>
+        </div>
+
+        <div class="card">
+            <span>Avatar YouTube</span>
+            <svg width="160" height="160" viewBox="0 0 160 160">
+                <circle cx="80" cy="80" r="80" fill="#8A9E85"/>
+                <circle cx="80" cy="80" r="80" fill="none" stroke="#D4845A" stroke-width="2"/>
+                <!-- C -->
+                <path d="M 88 34 A 32 32 0 1 0 88 94" fill="none" stroke="#1C2E1C" stroke-width="8" stroke-linecap="round"/>
+                <!-- V -->
+                <line x1="88" y1="34" x2="108" y2="98" stroke="#D4845A" stroke-width="7" stroke-linecap="round"/>
+                <line x1="128" y1="34" x2="108" y2="98" stroke="#D4845A" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+                <circle cx="108" cy="98" r="4.5" fill="#F5E6D3"/>
+            </svg>
+            <p>En cercle — le monogramme CV tient en format avatar, lisible et distinctif.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">LE CLUB DES VOYAGEURS — C · V · Monogramme v7 — 2026-06-07</div>
+</body>
+</html>
