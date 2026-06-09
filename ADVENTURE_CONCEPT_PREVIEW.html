@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Club des Voyageurs — Concept "Aventure d'abord"</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #F8F5F0 0%, #F5E6D3 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #1A1A1A;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        h1 { text-align: center; color: #001F3F; font-size: 36px; margin-bottom: 8px; }
+        .sub { text-align: center; color: #4A4A4A; margin-bottom: 50px; font-style: italic; }
+        h2 { color: #001F3F; font-size: 22px; margin: 50px 0 20px; border-bottom: 2px solid #7ECCC4; padding-bottom: 8px; }
+        .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card {
+            background: white; border-radius: 12px; padding: 30px; text-align: center;
+            box-shadow: 0 4px 20px rgba(0,31,63,0.1);
+        }
+        .card h3 { color: #001F3F; font-size: 16px; margin-bottom: 18px; }
+        .card p.note { font-size: 13px; color: #4A4A4A; margin-top: 14px; line-height: 1.5; }
+        svg { max-width: 220px; height: auto; }
+
+        /* Thumbnail mockup */
+        .thumb {
+            position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 10px;
+            overflow: hidden; box-shadow: 0 6px 24px rgba(0,31,63,0.2);
+        }
+        .thumb-title {
+            position: absolute; left: 28px; bottom: 28px; right: 28px;
+            font-family: 'Playfair Display', serif; font-weight: 700; color: #F8F5F0;
+            font-size: clamp(20px, 4vw, 38px); line-height: 1.15;
+            text-shadow: 0 2px 12px rgba(0,31,63,0.6);
+        }
+        .corner-logo {
+            position: absolute; right: 16px; bottom: 16px; width: 56px; height: 56px;
+            background: rgba(0,31,63,0.55); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(2px);
+        }
+        .corner-logo svg { width: 36px; max-width: none; }
+        .footer { text-align: center; margin-top: 60px; color: #4A4A4A; font-size: 13px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Concept "Aventure d'abord"</h1>
+    <p class="sub">Comparatif : symbole actuel (club) vs. symbole proposé (horizon) — et application miniature YouTube</p>
+
+    <h2>1. Le symbole — actuel vs. proposé</h2>
+    <div class="row">
+        <div class="card">
+            <h3>Actuel — "Table ronde + voyage"</h3>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#001F3F" stroke-width="3"/>
+                <circle cx="100" cy="100" r="50" fill="none" stroke="#7ECCC4" stroke-width="2" opacity="0.6"/>
+                <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="155" cy="45" r="5" fill="#E8A572"/>
+            </svg>
+            <p class="note">Le cercle (club, convivialité) domine ; la ligne de voyage est l'accent.<br>→ Identité de marque, cohérence "talk-show entre potes".</p>
+        </div>
+        <div class="card">
+            <h3>Proposé — "Horizon d'abord, club en signature"</h3>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Sun / horizon arc dominant -->
+                <circle cx="100" cy="95" r="38" fill="none" stroke="#E8A572" stroke-width="3"/>
+                <line x1="20" y1="135" x2="180" y2="135" stroke="#7ECCC4" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Mountain / route silhouette -->
+                <polyline points="35,135 75,95 100,118 140,75 175,135" fill="none" stroke="#001F3F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="140" cy="75" r="4" fill="#F9D5A8"/>
+                <!-- Club, signature discrète -->
+                <circle cx="100" cy="95" r="14" fill="none" stroke="#001F3F" stroke-width="1.5" opacity="0.55"/>
+            </svg>
+            <p class="note">L'horizon/la montagne/le départ deviennent le symbole principal ; le petit cercle du "club" devient une signature discrète à l'intérieur (clin d'œil, pas l'élément dominant).<br>→ Plus de désir immédiat, lisible en miniature.</p>
+        </div>
+    </div>
+
+    <h2>2. Application miniature YouTube (logique "aventure d'abord")</h2>
+    <div class="row" style="grid-template-columns: 1fr;">
+        <div class="card">
+            <h3>Miniature — visuel d'aventure dominant, logo club discret en coin</h3>
+            <div class="thumb" style="background: linear-gradient(180deg, #B8D4E0 0%, #F9D5A8 55%, #E8A572 100%);">
+                <svg width="100%" height="100%" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0;">
+                    <!-- sun -->
+                    <circle cx="620" cy="160" r="70" fill="#F8F5F0" opacity="0.85"/>
+                    <!-- distant mountains -->
+                    <polygon points="0,300 180,180 340,300" fill="#7ECCC4" opacity="0.55"/>
+                    <polygon points="260,300 460,150 680,300" fill="#001F3F" opacity="0.75"/>
+                    <polygon points="520,300 700,210 800,300" fill="#001F3F" opacity="0.55"/>
+                    <!-- ground -->
+                    <rect x="0" y="300" width="800" height="150" fill="#001F3F"/>
+                    <!-- route line -->
+                    <path d="M 60 450 C 250 360, 450 380, 760 300" fill="none" stroke="#F9D5A8" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round" opacity="0.9"/>
+                </svg>
+                <div class="thumb-title">ON A DORMI<br>DANS LE DÉSERT</div>
+                <div class="corner-logo">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="70" fill="none" stroke="#F8F5F0" stroke-width="6"/>
+                        <line x1="45" y1="155" x2="155" y2="45" stroke="#7ECCC4" stroke-width="8" stroke-linecap="round"/>
+                        <circle cx="155" cy="45" r="9" fill="#E8A572"/>
+                    </svg>
+                </div>
+            </div>
+            <p class="note">Le paysage / l'horizon occupe tout l'espace pour capter le clic ; le logo "club" reste présent mais en signature discrète (badge rond, coin bas-droit) — exactement ce que prévoit déjà le brand guideline §5 "YouTube Branding".<br>Le micro n'apparaît pas du tout dans la miniature : il reste l'identité du <em>format</em> (visible sur le canal, l'avatar, le studio), pas l'appât du clic.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Le Club des Voyageurs</strong> — Concept exploratoire "Aventure d'abord" — 2026-06-07</p>
+        <p style="margin-top:6px;">Partir, revenir, raconter.</p>
+    </div>
+</div>
+</body>
+</html>

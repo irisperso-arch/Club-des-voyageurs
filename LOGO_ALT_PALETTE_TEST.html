@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — Logo, palette alternative</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+        background:linear-gradient(135deg,#F8F5F0 0%,#F5E6D3 100%);
+        min-height:100vh; padding:40px 20px; color:#1A1A1A;
+    }
+    .container { max-width:1100px; margin:0 auto; }
+    h1 { text-align:center; color:#001F3F; font-size:30px; margin-bottom:8px; }
+    .sub { text-align:center; color:#4A4A4A; margin-bottom:40px; font-style:italic; max-width:700px; margin-left:auto; margin-right:auto; }
+    h2 { color:#001F3F; font-size:19px; margin:50px 0 18px; border-bottom:2px solid #7ECCC4; padding-bottom:8px; }
+    .palette-row { display:flex; gap:14px; justify-content:center; margin-bottom:10px; flex-wrap:wrap; }
+    .pswatch { width:64px; height:64px; border-radius:50%; box-shadow:0 2px 10px rgba(0,0,0,0.12); display:flex; align-items:flex-end; justify-content:center; }
+    .pswatch span { font-size:10px; font-family:monospace; color:#001F3F; background:rgba(255,255,255,0.75); border-radius:4px; padding:1px 4px; margin-bottom:-18px; }
+    .row { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px; }
+    .card { background:white; border-radius:12px; padding:28px; text-align:center; box-shadow:0 4px 20px rgba(0,31,63,0.1); display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .card.alt-bg { background:#F1F1E2; }
+    .card h3 { color:#0F1F3D; font-size:14px; margin-bottom:18px; letter-spacing:0.3px; }
+    .card p.note { font-size:12.5px; color:#4A4A4A; margin-top:14px; line-height:1.6; text-align:left; }
+    .card p.note b { color:#0F1F3D; }
+    svg { max-width:190px; height:auto; }
+    .footer { text-align:center; margin-top:50px; color:#4A4A4A; font-size:13px; }
+    .avatar-grid { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+    .avatar { width:104px; height:104px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 16px rgba(0,31,63,0.18); }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Le mark "Partir, Revenir" — palette alternative (plus douce, plus mate)</h1>
+    <p class="sub">Ta palette : un bleu nuit profond, un turquoise plus mat, un sauge, un blanc cassé crème, un jaune beurre, et une terre cuite/rosée — un ensemble plus feutré, "lifestyle éditorial" que la palette actuelle, qui était plus contrastée et "graphique".</p>
+
+    <h2>1. La palette proposée</h2>
+    <div class="palette-row">
+        <div class="pswatch" style="background:#0F1F3D;"><span>#0F1F3D</span></div>
+        <div class="pswatch" style="background:#7AB7B3;"><span>#7AB7B3</span></div>
+        <div class="pswatch" style="background:#CDD7CC;"><span>#CDD7CC</span></div>
+        <div class="pswatch" style="background:#F1F1E2;"><span>#F1F1E2</span></div>
+        <div class="pswatch" style="background:#F8DFA0;"><span>#F8DFA0</span></div>
+        <div class="pswatch" style="background:#D9A98B;"><span>#D9A98B</span></div>
+    </div>
+    <p class="note" style="text-align:center;max-width:680px;margin:18px auto 0;">Rôles que je leur donnerais dans le mark : <b>bleu nuit</b> → trait principal (remplace le bleu marine), <b>terre cuite/rosée</b> → point "départ" (remplace le corail), <b>turquoise mat</b> → point "retour" (cohérent avec l'existant), <b>crème</b> → fond clair, <b>jaune beurre</b> → halo lumineux/ambiance.</p>
+
+    <h2>2. Comparatif côte à côte — actuel vs. proposée</h2>
+    <div class="row">
+        <div class="card">
+            <h3>PALETTE ACTUELLE (brand guideline)</h3>
+            <svg viewBox="0 0 200 200"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#001F3F" stroke-width="9" stroke-linecap="round"/><circle cx="142" cy="55" r="7" fill="#E8A572"/><circle cx="142" cy="145" r="5" fill="#7ECCC4"/></svg>
+            <p class="note">Plus contrastée, plus "pop" — corail vif vs turquoise vif sur bleu marine profond. Très lisible, énergique, "talk-show vivant".</p>
+        </div>
+        <div class="card alt-bg">
+            <h3>PALETTE ALTERNATIVE (tes couleurs)</h3>
+            <svg viewBox="0 0 200 200"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#0F1F3D" stroke-width="9" stroke-linecap="round"/><circle cx="142" cy="55" r="7" fill="#D9A98B"/><circle cx="142" cy="145" r="5" fill="#7AB7B3"/></svg>
+            <p class="note">Plus mate, plus feutrée — terre cuite et turquoise désaturés sur bleu nuit et fond crème. Ambiance plus "carnet de voyage", chaleureuse et posée — moins "néon", plus "lecture du dimanche".</p>
+        </div>
+    </div>
+
+    <h2>3. Lock-up avec le nom, en palette alternative</h2>
+    <div class="row">
+        <div class="card alt-bg">
+            <h3>HORIZONTAL</h3>
+            <svg viewBox="0 0 420 130"><path d="M 95 35 A 30 30 0 1 0 95 95" fill="none" stroke="#0F1F3D" stroke-width="6" stroke-linecap="round"/><circle cx="97" cy="35" r="4.5" fill="#D9A98B"/><circle cx="97" cy="95" r="3.2" fill="#7AB7B3"/><text x="135" y="58" font-family="Playfair Display, serif" font-weight="700" font-size="24" fill="#0F1F3D">Le Club</text><text x="135" y="86" font-family="Playfair Display, serif" font-weight="700" font-size="24" fill="#0F1F3D">des Voyageurs</text></svg>
+            <p class="note">Sur fond crème #F1F1E2 — rendu plus doux, plus "papier", convient bien à un univers éditorial/lifestyle (site, newsletter, packaging).</p>
+        </div>
+        <div class="card" style="background:#0F1F3D;">
+            <h3 style="color:#F1F1E2;">INVERSÉ — sur bleu nuit</h3>
+            <svg viewBox="0 0 200 200"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#F1F1E2" stroke-width="9" stroke-linecap="round"/><circle cx="142" cy="55" r="7" fill="#F8DFA0"/><circle cx="142" cy="145" r="5" fill="#7AB7B3"/></svg>
+            <p class="note" style="color:#CDD7CC;">Sur fond bleu nuit, le point "départ" passe en jaune beurre — plus chaud, plus doux que le corail original, garde le contraste sans agresser.</p>
+        </div>
+    </div>
+
+    <h2>4. Avatar de chaîne — test en cercle</h2>
+    <div class="avatar-grid">
+        <div class="avatar" style="background:#0F1F3D;"><svg viewBox="0 0 200 200" style="max-width:62px;"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#F1F1E2" stroke-width="13" stroke-linecap="round"/><circle cx="142" cy="55" r="9" fill="#D9A98B"/><circle cx="142" cy="145" r="9" fill="#7AB7B3"/></svg></div>
+        <div class="avatar" style="background:#F1F1E2; border:1px solid #CDD7CC;"><svg viewBox="0 0 200 200" style="max-width:62px;"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#0F1F3D" stroke-width="13" stroke-linecap="round"/><circle cx="142" cy="55" r="9" fill="#D9A98B"/><circle cx="142" cy="145" r="9" fill="#7AB7B3"/></svg></div>
+        <div class="avatar" style="background:#CDD7CC;"><svg viewBox="0 0 200 200" style="max-width:62px;"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#0F1F3D" stroke-width="13" stroke-linecap="round"/><circle cx="142" cy="55" r="9" fill="#D9A98B"/><circle cx="142" cy="145" r="9" fill="#0F1F3D"/></svg></div>
+        <div class="avatar" style="background:#D9A98B;"><svg viewBox="0 0 200 200" style="max-width:62px;"><path d="M 138 55 A 60 60 0 1 0 138 145" fill="none" stroke="#0F1F3D" stroke-width="13" stroke-linecap="round"/><circle cx="142" cy="55" r="9" fill="#F1F1E2"/><circle cx="142" cy="145" r="9" fill="#7AB7B3"/></svg></div>
+    </div>
+
+    <h2>5. Mon avis honnête sur ce changement</h2>
+    <p class="note" style="max-width:760px;margin:0 auto;text-align:left;">
+        Cette palette fonctionne <b>très bien</b> avec le mark — peut-être même mieux pour incarner <i>"Partir, revenir, raconter"</i>, parce qu'elle est moins "cri d'alerte publicitaire" et plus "carnet de voyage qu'on feuillette le dimanche soir". Le risque : sur une vignette YouTube au milieu d'autres miniatures saturées, ces tons mats peuvent se faire discrets — moins de "stopping power" au premier coup d'œil.<br><br>
+        <b>Mon conseil :</b> ne choisis pas entre les deux — utilise la palette actuelle (plus contrastée) pour tout ce qui doit <i>capter l'attention</i> (miniatures, avatar, CTA), et cette palette plus douce pour tout ce qui doit <i>installer une ambiance</i> une fois que les gens sont déjà là (site, newsletter, génériques, habillage de plateau). Beaucoup de marques voyage fonctionnent très bien avec ce double registre — un mode "vitrine" énergique et un mode "intérieur" feutré.
+    </p>
+
+    <div class="footer">
+        <p><strong>Le Club des Voyageurs</strong> — Test palette alternative — 2026-06-07</p>
+        <p style="margin-top:6px;">Partir, revenir, raconter.</p>
+    </div>
+</div>
+</body>
+</html>

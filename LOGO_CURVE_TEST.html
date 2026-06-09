@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — Test de courbe</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family:'Inter',-apple-system,sans-serif;
+        background:#1C2E1C;
+        min-height:100vh;
+        padding:50px 20px;
+        display:flex; flex-direction:column; align-items:center; gap:40px;
+    }
+    h1 { color:#F7F5F0; font-size:18px; font-weight:400; letter-spacing:4px; text-transform:uppercase; text-align:center; }
+    .sub { color:#8A9E85; font-size:13px; font-style:italic; text-align:center; max-width:680px; margin-top:-28px; }
+    .row { display:flex; flex-wrap:wrap; gap:28px; justify-content:center; }
+    .item { display:flex; flex-direction:column; align-items:center; gap:10px; }
+    .item span { color:#6A8A6A; font-size:10px; letter-spacing:3px; text-transform:uppercase; text-align:center; }
+    .item p { color:#5A7A5A; font-size:12px; line-height:1.6; text-align:center; max-width:200px; }
+    .footer { color:#3A5A3A; font-size:11px; letter-spacing:2px; }
+</style>
+</head>
+<body>
+
+<h1>Le chemin — 3 gestes</h1>
+<p class="sub">Le problème : la courbe actuelle fait un S inversé (gauche puis droite) — non naturel. Voici 3 traitements avec un seul geste, une seule direction.</p>
+
+<div class="row">
+
+    <!-- Courbe actuelle (le problème) -->
+    <div class="item">
+        <span>Actuelle — le problème</span>
+        <svg width="220" height="220" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="280" rx="18" fill="#C9D6CA"/>
+            <path d="M 165 58 A 58 58 0 1 0 208 114"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <!-- Problematic S-curve -->
+            <path d="M 144 202 C 130 170, 136 140, 155 120 C 170 104, 200 92, 248 68"
+                  fill="none" stroke="#01466D" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="248" cy="68" r="5" fill="#01466D" opacity="0.6"/>
+        </svg>
+        <p>Le tracé part à gauche avant de revenir à droite — crée une tension artificielle.</p>
+    </div>
+
+    <!-- Option 1 : Arc propre, une direction -->
+    <div class="item">
+        <span>1 — Arc simple, une direction</span>
+        <svg width="220" height="220" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="280" rx="18" fill="#C9D6CA"/>
+            <path d="M 165 58 A 58 58 0 1 0 208 114"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <!-- Single clean arc, one direction from lower-left to upper-right -->
+            <path d="M 110 210 C 130 170, 165 130, 255 65"
+                  fill="none" stroke="#01466D" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="255" cy="65" r="5" fill="#01466D" opacity="0.7"/>
+        </svg>
+        <p>Un seul arc en diagonale, du bas-gauche vers le haut-droit — naturel, comme une route en perspective.</p>
+    </div>
+
+    <!-- Option 2 : Ligne presque droite, légèrement courbée -->
+    <div class="item">
+        <span>2 — Ligne tendue, quasi droite</span>
+        <svg width="220" height="220" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="280" rx="18" fill="#C9D6CA"/>
+            <path d="M 165 58 A 58 58 0 1 0 208 114"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <!-- Barely curved, very direct, confident -->
+            <path d="M 105 215 C 140 175, 185 130, 260 58"
+                  fill="none" stroke="#01466D" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="260" cy="58" r="5" fill="#01466D" opacity="0.7"/>
+        </svg>
+        <p>Presque une ligne droite, très légèrement incurvée — geste confiant, direct, "cap mis, on y va".</p>
+    </div>
+
+    <!-- Option 3 : Courbe douce qui part du cercle -->
+    <div class="item">
+        <span>3 — Naît du cercle, s'échappe</span>
+        <svg width="220" height="220" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="280" rx="18" fill="#C9D6CA"/>
+            <path d="M 165 58 A 58 58 0 1 0 208 114"
+                  fill="none" stroke="#E3894A" stroke-width="9" stroke-linecap="round"/>
+            <!-- Path starts FROM the gap endpoint of the arc, flows outward naturally -->
+            <path d="M 208 114 C 230 95, 250 78, 270 48"
+                  fill="none" stroke="#01466D" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="270" cy="48" r="5" fill="#01466D" opacity="0.7"/>
+        </svg>
+        <p>Le chemin part exactement du bout du cercle — les deux formes ne font qu'une, elles se prolongent l'une l'autre.</p>
+    </div>
+
+</div>
+
+<div class="footer">— Laquelle te semble la plus juste ?</div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — Logo v8, inspiré du langage VacancesWeb</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+        font-family:'Inter',-apple-system,sans-serif;
+        background:#2D3B2D;
+        min-height:100vh;
+        padding:50px 20px;
+        display:flex; flex-direction:column; align-items:center; gap:50px;
+    }
+    h1 { color:#F7F5F0; font-size:18px; font-weight:400; letter-spacing:4px; text-transform:uppercase; text-align:center; }
+    .sub { color:#8A9E85; font-size:13px; font-style:italic; text-align:center; max-width:680px; margin-top:-34px; line-height:1.7; }
+    .section { width:100%; max-width:1100px; }
+    .section-title { color:#6BBDBB; font-size:10px; letter-spacing:5px; text-transform:uppercase; text-align:center; margin-bottom:28px; }
+    .row { display:flex; flex-wrap:wrap; gap:28px; justify-content:center; align-items:flex-start; }
+    .item { display:flex; flex-direction:column; align-items:center; gap:10px; }
+    .item span { color:#6A8A6A; font-size:10px; letter-spacing:2.5px; text-transform:uppercase; }
+    .footer { color:#3A5A3A; font-size:11px; letter-spacing:2px; text-align:center; }
+</style>
+</head>
+<body>
+
+<h1>Le Club des Voyageurs — v8</h1>
+<p class="sub">Un cercle ouvert (le club, l'accueil, le retour) · Un chemin fluide qui en part (le voyage, la découverte, le départ) · Palette VacancesWeb · Zéro symbole touristique</p>
+
+<!-- VERSION PRINCIPALE -->
+<div class="section">
+    <div class="section-title">Badge principal — fond sauge</div>
+    <div class="row">
+        <div class="item">
+            <span>Carré / Post Instagram</span>
+            <svg width="300" height="300" viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background sage -->
+                <rect x="0" y="0" width="380" height="380" rx="22" fill="#C9D6CA"/>
+
+                <!-- Open arc — le club -->
+                <!-- Center (190,155), radius 72, gap at upper-right ~40° -->
+                <!-- Start: SVG angle -70° → (190+72*cos70°, 155-72*sin70°) = (190+24.6, 155-67.7) = (215, 87) -->
+                <!-- End: SVG angle -20° → (190+72*cos20°, 155-72*sin20°) = (190+67.7, 155-24.6) = (258, 130) -->
+                <!-- Long arc (320°): M 215 87 A 72 72 0 1 0 258 130 -->
+                <path d="M 215 87 A 72 72 0 1 0 258 130"
+                      fill="none" stroke="#E3894A" stroke-width="7" stroke-linecap="round"/>
+
+                <!-- Fluid path — le voyage -->
+                <!-- flows from inside/bottom, through the gap (midpoint ~-45° → (190+50.9, 155-50.9) = (241,104)), out upper-right -->
+                <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 318 74"
+                      fill="none" stroke="#01466D" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Small departure dot -->
+                <circle cx="318" cy="74" r="4" fill="#01466D" opacity="0.7"/>
+
+                <!-- Separator line -->
+                <line x1="100" y1="258" x2="280" y2="258" stroke="#01466D" stroke-width="0.8" opacity="0.3"/>
+
+                <!-- Text -->
+                <text x="190" y="282" text-anchor="middle"
+                      font-family="Playfair Display, Georgia, serif"
+                      font-size="10" font-weight="400" letter-spacing="6" fill="#01466D" opacity="0.7">LE</text>
+                <text x="190" y="318" text-anchor="middle"
+                      font-family="Playfair Display, Georgia, serif"
+                      font-size="48" font-weight="700" letter-spacing="2" fill="#01466D">CLUB</text>
+                <text x="190" y="338" text-anchor="middle"
+                      font-family="Playfair Display, Georgia, serif"
+                      font-size="10" font-weight="400" letter-spacing="6" fill="#01466D" opacity="0.7">DES</text>
+                <text x="190" y="362" text-anchor="middle"
+                      font-family="Playfair Display, Georgia, serif"
+                      font-size="25" font-weight="700" letter-spacing="1.5" fill="#01466D">VOYAGEURS</text>
+            </svg>
+        </div>
+
+        <div class="item">
+            <span>Avec tagline</span>
+            <svg width="300" height="330" viewBox="0 0 380 420" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="380" height="420" rx="22" fill="#C9D6CA"/>
+                <path d="M 215 87 A 72 72 0 1 0 258 130"
+                      fill="none" stroke="#E3894A" stroke-width="7" stroke-linecap="round"/>
+                <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 318 74"
+                      fill="none" stroke="#01466D" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="318" cy="74" r="4" fill="#01466D" opacity="0.7"/>
+                <line x1="100" y1="258" x2="280" y2="258" stroke="#01466D" stroke-width="0.8" opacity="0.3"/>
+                <text x="190" y="282" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="10" letter-spacing="6" fill="#01466D" opacity="0.7">LE</text>
+                <text x="190" y="318" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="48" font-weight="700" letter-spacing="2" fill="#01466D">CLUB</text>
+                <text x="190" y="338" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="10" letter-spacing="6" fill="#01466D" opacity="0.7">DES</text>
+                <text x="190" y="362" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="25" font-weight="700" letter-spacing="1.5" fill="#01466D">VOYAGEURS</text>
+                <text x="190" y="398" text-anchor="middle" font-family="Lora, Georgia, serif"
+                      font-size="11" font-style="italic" letter-spacing="1.5" fill="#6BBDBB">Partir, revenir, raconter</text>
+            </svg>
+        </div>
+
+        <!-- Version nuit -->
+        <div class="item">
+            <span>Version nuit</span>
+            <svg width="300" height="330" viewBox="0 0 380 420" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="380" height="420" rx="22" fill="#01466D"/>
+                <path d="M 215 87 A 72 72 0 1 0 258 130"
+                      fill="none" stroke="#E3894A" stroke-width="7" stroke-linecap="round"/>
+                <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 318 74"
+                      fill="none" stroke="#F7F5F0" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="318" cy="74" r="4" fill="#F7F5F0" opacity="0.8"/>
+                <line x1="100" y1="258" x2="280" y2="258" stroke="#F7F5F0" stroke-width="0.8" opacity="0.25"/>
+                <text x="190" y="282" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="10" letter-spacing="6" fill="#F7F5F0" opacity="0.6">LE</text>
+                <text x="190" y="318" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="48" font-weight="700" letter-spacing="2" fill="#F7F5F0">CLUB</text>
+                <text x="190" y="338" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="10" letter-spacing="6" fill="#F7F5F0" opacity="0.6">DES</text>
+                <text x="190" y="362" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+                      font-size="25" font-weight="700" letter-spacing="1.5" fill="#C9D6CA">VOYAGEURS</text>
+                <text x="190" y="398" text-anchor="middle" font-family="Lora, Georgia, serif"
+                      font-size="11" font-style="italic" letter-spacing="1.5" fill="#6BBDBB">Partir, revenir, raconter</text>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- LOCK-UP HORIZONTAL -->
+<div class="section">
+    <div class="section-title">Lock-up horizontal — site, newsletter, génériques</div>
+    <div class="row">
+        <div class="item">
+            <svg width="480" height="100" viewBox="0 0 580 120" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="580" height="120" rx="14" fill="#C9D6CA"/>
+                <!-- Mark scaled down -->
+                <g transform="translate(10, 8) scale(0.68)">
+                    <path d="M 215 87 A 72 72 0 1 0 258 130"
+                          fill="none" stroke="#E3894A" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 318 74"
+                          fill="none" stroke="#01466D" stroke-width="4.5" stroke-linecap="round"/>
+                    <circle cx="318" cy="74" r="5" fill="#01466D" opacity="0.7"/>
+                </g>
+                <!-- Text -->
+                <text x="195" y="46" font-family="Playfair Display, Georgia, serif"
+                      font-size="9" letter-spacing="5" fill="#01466D" opacity="0.6">LE</text>
+                <text x="190" y="78" font-family="Playfair Display, Georgia, serif"
+                      font-size="40" font-weight="700" letter-spacing="1" fill="#01466D">CLUB DES VOYAGEURS</text>
+                <text x="192" y="100" font-family="Lora, Georgia, serif"
+                      font-size="11" font-style="italic" letter-spacing="1.5" fill="#6BBDBB">Partir, revenir, raconter</text>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- AVATAR YOUTUBE -->
+<div class="section">
+    <div class="section-title">Avatars — YouTube, réseaux</div>
+    <div class="row">
+        <div class="item">
+            <span>Sauge</span>
+            <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="65" cy="65" r="65" fill="#C9D6CA"/>
+                <g transform="translate(-126, -118) scale(0.8)">
+                    <path d="M 215 87 A 72 72 0 1 0 258 130"
+                          fill="none" stroke="#E3894A" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 305 85"
+                          fill="none" stroke="#01466D" stroke-width="4.5" stroke-linecap="round"/>
+                    <circle cx="305" cy="85" r="5" fill="#01466D" opacity="0.7"/>
+                </g>
+            </svg>
+        </div>
+        <div class="item">
+            <span>Bleu nuit</span>
+            <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="65" cy="65" r="65" fill="#01466D"/>
+                <g transform="translate(-126, -118) scale(0.8)">
+                    <path d="M 215 87 A 72 72 0 1 0 258 130"
+                          fill="none" stroke="#E3894A" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 305 85"
+                          fill="none" stroke="#F7F5F0" stroke-width="4.5" stroke-linecap="round"/>
+                    <circle cx="305" cy="85" r="5" fill="#F7F5F0" opacity="0.8"/>
+                </g>
+            </svg>
+        </div>
+        <div class="item">
+            <span>Terracotta</span>
+            <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="65" cy="65" r="65" fill="#E3894A"/>
+                <g transform="translate(-126, -118) scale(0.8)">
+                    <path d="M 215 87 A 72 72 0 1 0 258 130"
+                          fill="none" stroke="#F7F5F0" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 186 228 C 170 192, 180 158, 210 132 C 232 112, 260 100, 305 85"
+                          fill="none" stroke="#01466D" stroke-width="4.5" stroke-linecap="round"/>
+                    <circle cx="305" cy="85" r="5" fill="#01466D" opacity="0.7"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- PALETTE -->
+<div class="section">
+    <div class="section-title">Palette — alignée VacancesWeb</div>
+    <div class="row">
+        <svg width="480" height="52" viewBox="0 0 480 52">
+            <rect x="0"   y="0" width="72" height="52" rx="8" fill="#01466D"/>
+            <rect x="80"  y="0" width="72" height="52" rx="8" fill="#6BBDBB"/>
+            <rect x="160" y="0" width="72" height="52" rx="8" fill="#C9D6CA"/>
+            <rect x="240" y="0" width="72" height="52" rx="8" fill="#F7F5F0"/>
+            <rect x="320" y="0" width="72" height="52" rx="8" fill="#E3894A"/>
+            <rect x="400" y="0" width="72" height="52" rx="8" fill="#F0D99A"/>
+            <text x="36"  y="68" text-anchor="middle" font-size="9" fill="#8A9E85" font-family="monospace">#01466D</text>
+            <text x="116" y="68" text-anchor="middle" font-size="9" fill="#8A9E85" font-family="monospace">#6BBDBB</text>
+            <text x="196" y="68" text-anchor="middle" font-size="9" fill="#8A9E85" font-family="monospace">#C9D6CA</text>
+            <text x="276" y="68" text-anchor="middle" font-size="9" fill="#8A9E85" font-family="monospace">#F7F5F0</text>
+            <text x="356" y="68" text-anchor="middle" font-size="9" fill="#8A9E85" font-family="monospace">#E3894A</text>
+            <text x="436" y="68" text-anchor="middle" font-size="9" fill="#8A9E85" font-family="monospace">#F0D99A</text>
+        </svg>
+    </div>
+</div>
+
+<div class="footer">LE CLUB DES VOYAGEURS — v8, langage VacancesWeb — 2026-06-07</div>
+</body>
+</html>
