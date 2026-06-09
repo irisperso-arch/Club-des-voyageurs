@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club des Voyageurs — Dossier Identité Visuelle</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+    --navy:    #01466D;
+    --teal:    #5D9B97;
+    --sage:    #C9D6CA;
+    --terra:   #D97046;
+    --sand:    #9F836A;
+    --cream:   #F7F5F0;
+    --road:    #DFD8CE;
+    --dark:    #0A2B40;
+}
+
+body {
+    font-family:'Montserrat', -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--navy);
+}
+
+/* ─── COVER ─── */
+.cover {
+    width:100%; height:100vh; min-height:640px;
+    background: var(--navy);
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:36px;
+    position:relative; overflow:hidden;
+}
+.cover-bg-line {
+    position:absolute; inset:0; pointer-events:none;
+}
+.cover-label {
+    font-size:11px; letter-spacing:6px; text-transform:uppercase;
+    color: var(--teal); position:relative;
+}
+.cover-title {
+    font-family:'Montserrat', serif; font-size:clamp(13px,2vw,16px);
+    font-weight:300; letter-spacing:8px; text-transform:uppercase;
+    color: var(--cream); opacity:.7; position:relative; text-align:center;
+}
+
+/* ─── SECTIONS ─── */
+.section {
+    max-width:1080px; margin:0 auto;
+    padding:90px 40px;
+}
+.section-label {
+    font-size:10px; letter-spacing:6px; text-transform:uppercase;
+    color: var(--teal); margin-bottom:10px;
+}
+.section-title {
+    font-family:'Montserrat', sans-serif;
+    font-size:clamp(24px,3.5vw,38px); font-weight:700;
+    color: var(--navy); margin-bottom:48px; line-height:1.2;
+}
+
+.divider {
+    height:1px; background: var(--sage);
+    max-width:1080px; margin:0 auto;
+}
+
+/* ─── LOGO GRID ─── */
+.logo-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px; }
+.logo-card {
+    border-radius:16px; overflow:hidden;
+    box-shadow:0 4px 24px rgba(1,70,109,.08);
+}
+.logo-card-label {
+    font-size:10px; letter-spacing:2px; text-transform:uppercase;
+    color:#8A9E85; margin-top:10px; text-align:center;
+}
+
+/* ─── PALETTE ─── */
+.palette { display:flex; flex-wrap:wrap; gap:20px; }
+.swatch-wrap { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.swatch { width:88px; height:88px; border-radius:50%; box-shadow:0 2px 12px rgba(0,0,0,.1); }
+.swatch-name { font-size:11px; font-weight:600; color:var(--navy); }
+.swatch-hex  { font-family:monospace; font-size:11px; color:var(--sand); }
+.swatch-use  { font-size:10px; color:#8A9E85; text-align:center; max-width:88px; }
+
+/* ─── TYPO ─── */
+.typo-block { background:var(--sage); border-radius:16px; padding:36px; }
+.typo-sample-big {
+    font-family:'Montserrat', sans-serif;
+    font-size:clamp(36px,6vw,72px); font-weight:800;
+    color: var(--navy); line-height:1; margin-bottom:12px;
+}
+.typo-sample-body {
+    font-family:'Lora', serif; font-style:italic;
+    font-size:18px; color: var(--navy); opacity:.7;
+    line-height:1.7; max-width:520px;
+}
+.typo-meta { font-size:11px; letter-spacing:3px; color:var(--teal); text-transform:uppercase; margin-bottom:8px; }
+
+/* ─── RULES ─── */
+.rules-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:16px; }
+.rule-card { border-radius:12px; padding:20px; }
+.rule-card.do   { background:var(--sage); }
+.rule-card.dont { background:#F9E8E0; }
+.rule-card h4   { font-size:11px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px; }
+.rule-card.do   h4 { color:var(--teal); }
+.rule-card.dont h4 { color:var(--terra); }
+.rule-card p    { font-size:12px; line-height:1.7; color:var(--navy); opacity:.75; }
+
+/* ─── THUMB ─── */
+.thumb { border-radius:14px; overflow:hidden; box-shadow:0 8px 32px rgba(1,70,109,.18); }
+.app-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:28px; }
+
+/* ─── FOOTER ─── */
+footer {
+    background:var(--navy); padding:48px 40px;
+    text-align:center;
+    font-family:'Lora', serif; font-style:italic;
+    color:var(--teal); font-size:14px; letter-spacing:2px;
+}
+footer strong { display:block; font-family:'Montserrat', sans-serif; font-style:normal;
+    font-weight:700; font-size:18px; letter-spacing:4px; text-transform:uppercase;
+    color:var(--cream); margin-bottom:8px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     COVER
+════════════════════════════════════════════ -->
+<div class="cover">
+    <svg class="cover-bg-line" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+        <path d="M-100 600 C200 500 500 450 800 350 C1000 280 1100 220 1400 100"
+              fill="none" stroke="#C9D6CA" stroke-width="1.5" opacity=".12"/>
+        <path d="M-100 680 C300 580 600 520 900 400 C1100 320 1200 260 1400 160"
+              fill="none" stroke="#5D9B97" stroke-width="1" opacity=".1"/>
+    </svg>
+
+    <!-- LOGO HERO -->
+    <svg width="220" height="220" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Circle bg -->
+        <circle cx="150" cy="138" r="95" fill="#C9D6CA" opacity=".15"/>
+        <!-- Open arc – terracotta -->
+        <path d="M 175 53 A 86 86 0 1 0 232 108"
+              fill="none" stroke="#D97046" stroke-width="10" stroke-linecap="round"/>
+        <!-- Winding road inside -->
+        <path d="M 133 220 Q 125 185 138 160 Q 148 140 150 115"
+              fill="none" stroke="#DFD8CE" stroke-width="14" stroke-linecap="round" opacity=".9"/>
+        <path d="M 167 220 Q 175 185 162 160 Q 152 140 150 115"
+              fill="none" stroke="#DFD8CE" stroke-width="14" stroke-linecap="round" opacity=".9"/>
+        <!-- Road fill -->
+        <path d="M 133 220 Q 125 185 138 160 Q 148 140 150 115 Q 152 140 162 160 Q 175 185 167 220 Z"
+              fill="#DFD8CE" opacity=".85"/>
+    </svg>
+
+    <div class="cover-label">Dossier Identité Visuelle</div>
+    <div class="cover-title">Le Club des Voyageurs</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     1. LE LOGO
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">01 — Le logo</div>
+    <div class="section-title">Toutes les variantes.</div>
+    <div class="logo-grid">
+
+        <!-- Principal sur sauge -->
+        <div>
+            <div class="logo-card">
+                <svg width="100%" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="320" fill="#C9D6CA"/>
+                    <path d="M 167 42 A 72 72 0 1 0 222 96"
+                          fill="none" stroke="#D97046" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z"
+                          fill="#DFD8CE" opacity=".85"/>
+                    <line x1="70" y1="210" x2="230" y2="210" stroke="#01466D" stroke-width=".7" opacity=".25"/>
+                    <text x="150" y="230" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="9" font-weight="600" letter-spacing="6" fill="#01466D" opacity=".55">LE</text>
+                    <text x="150" y="262" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="44" font-weight="800" letter-spacing="3" fill="#01466D">CLUB</text>
+                    <text x="150" y="278" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="9" font-weight="300" letter-spacing="6" fill="#01466D" opacity=".55">DES</text>
+                    <text x="150" y="308" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="22" font-weight="700" letter-spacing="2" fill="#01466D">VOYAGEURS</text>
+                </svg>
+            </div>
+            <div class="logo-card-label">Principal — fond sauge</div>
+        </div>
+
+        <!-- Fond crème -->
+        <div>
+            <div class="logo-card">
+                <svg width="100%" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="320" fill="#F7F5F0"/>
+                    <path d="M 167 42 A 72 72 0 1 0 222 96"
+                          fill="none" stroke="#D97046" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z"
+                          fill="#C9D6CA" opacity=".8"/>
+                    <line x1="70" y1="210" x2="230" y2="210" stroke="#01466D" stroke-width=".7" opacity=".2"/>
+                    <text x="150" y="230" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="9" font-weight="600" letter-spacing="6" fill="#01466D" opacity=".5">LE</text>
+                    <text x="150" y="262" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="44" font-weight="800" letter-spacing="3" fill="#01466D">CLUB</text>
+                    <text x="150" y="278" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="9" font-weight="300" letter-spacing="6" fill="#01466D" opacity=".5">DES</text>
+                    <text x="150" y="308" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="22" font-weight="700" letter-spacing="2" fill="#01466D">VOYAGEURS</text>
+                </svg>
+            </div>
+            <div class="logo-card-label">Sur fond crème</div>
+        </div>
+
+        <!-- Fond sombre -->
+        <div>
+            <div class="logo-card">
+                <svg width="100%" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="320" fill="#01466D"/>
+                    <path d="M 167 42 A 72 72 0 1 0 222 96"
+                          fill="none" stroke="#D97046" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z"
+                          fill="#C9D6CA" opacity=".5"/>
+                    <line x1="70" y1="210" x2="230" y2="210" stroke="#F7F5F0" stroke-width=".7" opacity=".15"/>
+                    <text x="150" y="230" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="9" font-weight="600" letter-spacing="6" fill="#F7F5F0" opacity=".5">LE</text>
+                    <text x="150" y="262" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="44" font-weight="800" letter-spacing="3" fill="#F7F5F0">CLUB</text>
+                    <text x="150" y="278" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="9" font-weight="300" letter-spacing="6" fill="#C9D6CA" opacity=".7">DES</text>
+                    <text x="150" y="308" text-anchor="middle" font-family="Montserrat,sans-serif"
+                          font-size="22" font-weight="700" letter-spacing="2" fill="#C9D6CA">VOYAGEURS</text>
+                </svg>
+            </div>
+            <div class="logo-card-label">Sur fond sombre</div>
+        </div>
+
+        <!-- Icône seule -->
+        <div>
+            <div class="logo-card">
+                <svg width="100%" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="320" fill="#C9D6CA"/>
+                    <path d="M 167 88 A 72 72 0 1 0 222 142"
+                          fill="none" stroke="#D97046" stroke-width="9" stroke-linecap="round"/>
+                    <path d="M 126 236 Q 118 200 132 175 Q 142 156 144 140 Q 146 156 156 175 Q 170 200 162 236 Z"
+                          fill="#DFD8CE" opacity=".9"/>
+                </svg>
+            </div>
+            <div class="logo-card-label">Icône seule — favicon, avatar</div>
+        </div>
+
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     2. VERSION HORIZONTALE
+════════════════════════════════════════════ -->
+<div class="section" style="padding-bottom:0;">
+    <div class="section-label">02 — Lock-up horizontal</div>
+    <div class="section-title">Pour le site, la newsletter, les génériques.</div>
+</div>
+<div style="max-width:1080px; margin:0 auto; padding:0 40px 80px;">
+    <div style="background:var(--sage); border-radius:16px; padding:32px;">
+        <svg width="100%" viewBox="0 0 660 110" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(12,8) scale(0.75)">
+                <path d="M 167 42 A 72 72 0 1 0 222 96"
+                      fill="none" stroke="#D97046" stroke-width="9" stroke-linecap="round"/>
+                <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z"
+                      fill="#DFD8CE" opacity=".85"/>
+            </g>
+            <text x="190" y="38" font-family="Montserrat,sans-serif" font-size="9" font-weight="600" letter-spacing="6" fill="#01466D" opacity=".55">LE CLUB DES</text>
+            <text x="186" y="74" font-family="Montserrat,sans-serif" font-size="46" font-weight="800" letter-spacing="2" fill="#01466D">VOYAGEURS</text>
+            <text x="188" y="96" font-family="Lora,serif" font-size="12" font-style="italic" letter-spacing="2" fill="#5D9B97">Partir, revenir, raconter</text>
+        </svg>
+    </div>
+    <div style="background:var(--navy); border-radius:16px; padding:32px; margin-top:16px;">
+        <svg width="100%" viewBox="0 0 660 110" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(12,8) scale(0.75)">
+                <path d="M 167 42 A 72 72 0 1 0 222 96"
+                      fill="none" stroke="#D97046" stroke-width="9" stroke-linecap="round"/>
+                <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z"
+                      fill="#C9D6CA" opacity=".5"/>
+            </g>
+            <text x="190" y="38" font-family="Montserrat,sans-serif" font-size="9" font-weight="600" letter-spacing="6" fill="#F7F5F0" opacity=".45">LE CLUB DES</text>
+            <text x="186" y="74" font-family="Montserrat,sans-serif" font-size="46" font-weight="800" letter-spacing="2" fill="#F7F5F0">VOYAGEURS</text>
+            <text x="188" y="96" font-family="Lora,serif" font-size="12" font-style="italic" letter-spacing="2" fill="#5D9B97">Partir, revenir, raconter</text>
+        </svg>
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     3. PALETTE
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">03 — Palette de couleurs</div>
+    <div class="section-title">Chaude, naturelle, éditoriale.</div>
+    <div class="palette">
+        <div class="swatch-wrap">
+            <div class="swatch" style="background:#01466D;"></div>
+            <div class="swatch-name">Bleu Nuit</div>
+            <div class="swatch-hex">#01466D</div>
+            <div class="swatch-use">Texte · logo principal</div>
+        </div>
+        <div class="swatch-wrap">
+            <div class="swatch" style="background:#D97046;"></div>
+            <div class="swatch-name">Terracotta</div>
+            <div class="swatch-hex">#D97046</div>
+            <div class="swatch-use">Arc du logo · accents</div>
+        </div>
+        <div class="swatch-wrap">
+            <div class="swatch" style="background:#5D9B97;"></div>
+            <div class="swatch-name">Turquoise</div>
+            <div class="swatch-hex">#5D9B97</div>
+            <div class="swatch-use">Tagline · liens · labels</div>
+        </div>
+        <div class="swatch-wrap">
+            <div class="swatch" style="background:#C9D6CA; border:1px solid #B8C8BA;"></div>
+            <div class="swatch-name">Sauge</div>
+            <div class="swatch-hex">#C9D6CA</div>
+            <div class="swatch-use">Fond principal · badge</div>
+        </div>
+        <div class="swatch-wrap">
+            <div class="swatch" style="background:#F7F5F0; border:1px solid #D4C4B0;"></div>
+            <div class="swatch-name">Crème</div>
+            <div class="swatch-hex">#F7F5F0</div>
+            <div class="swatch-use">Fond clair · texte inversé</div>
+        </div>
+        <div class="swatch-wrap">
+            <div class="swatch" style="background:#9F836A;"></div>
+            <div class="swatch-name">Sable</div>
+            <div class="swatch-hex">#9F836A</div>
+            <div class="swatch-use">Texte secondaire · print</div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     4. TYPOGRAPHIE
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">04 — Typographie</div>
+    <div class="section-title">Deux fontes. Une voix.</div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px;">
+        <div class="typo-block">
+            <div class="typo-meta">Titres · Logo · Headlines</div>
+            <div class="typo-sample-big">MONTSERRAT</div>
+            <div style="font-family:Montserrat,sans-serif; font-size:14px; font-weight:300; letter-spacing:4px; color:var(--navy); opacity:.6; margin-bottom:16px; text-transform:uppercase;">Light · Regular · Bold · ExtraBold</div>
+            <div style="font-family:Montserrat,sans-serif; font-size:15px; font-weight:400; color:var(--navy); opacity:.75; line-height:1.7;">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789
+            </div>
+        </div>
+        <div class="typo-block">
+            <div class="typo-meta">Corps · Tagline · Éditorial</div>
+            <div class="typo-sample-big" style="font-family:'Lora',serif; font-style:italic; font-size:clamp(28px,4vw,52px);">Lora</div>
+            <div style="font-family:Lora,serif; font-size:14px; font-weight:400; letter-spacing:1px; color:var(--navy); opacity:.6; margin-bottom:16px;">Italic · Regular</div>
+            <div class="typo-sample-body">
+                "Partir, revenir, raconter — chaque voyage est une histoire qui mérite d'être partagée."
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     5. AVATARS YouTube / RÉSEAUX
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">05 — Avatars</div>
+    <div class="section-title">YouTube · Réseaux sociaux.</div>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; align-items:center;">
+        <svg width="120" height="120" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="65" fill="#C9D6CA"/>
+            <g transform="translate(-72,-56) scale(0.86)">
+                <path d="M 167 42 A 72 72 0 1 0 222 96" fill="none" stroke="#D97046" stroke-width="9" stroke-linecap="round"/>
+                <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z" fill="#DFD8CE" opacity=".9"/>
+            </g>
+        </svg>
+        <svg width="120" height="120" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="65" fill="#01466D"/>
+            <g transform="translate(-72,-56) scale(0.86)">
+                <path d="M 167 42 A 72 72 0 1 0 222 96" fill="none" stroke="#D97046" stroke-width="9" stroke-linecap="round"/>
+                <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z" fill="#C9D6CA" opacity=".55"/>
+            </g>
+        </svg>
+        <svg width="120" height="120" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="65" fill="#F7F5F0"/>
+            <circle cx="65" cy="65" r="65" fill="none" stroke="#C9D6CA" stroke-width="1.5"/>
+            <g transform="translate(-72,-56) scale(0.86)">
+                <path d="M 167 42 A 72 72 0 1 0 222 96" fill="none" stroke="#D97046" stroke-width="9" stroke-linecap="round"/>
+                <path d="M 122 192 Q 114 157 128 132 Q 138 115 140 98 Q 142 115 152 132 Q 166 157 158 192 Z" fill="#C9D6CA" opacity=".8"/>
+            </g>
+        </svg>
+        <div style="font-size:12px; color:#8A9E85; line-height:1.8; max-width:220px;">
+            Fond sauge · Fond nuit · Fond crème<br>
+            <span style="color:var(--navy);">Format circulaire imposé par YouTube.</span><br>
+            Taille minimum recommandée : 800×800px.
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     6. APPLICATION MINIATURE YOUTUBE
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">06 — Miniatures YouTube</div>
+    <div class="section-title">Le logo en watermark, le voyage en héros.</div>
+    <div class="app-grid">
+        <div>
+            <div class="thumb">
+                <svg width="100%" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#B8D4E0"/>
+                            <stop offset="45%" stop-color="#F0D99A"/>
+                            <stop offset="100%" stop-color="#D97046" stop-opacity=".8"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="800" height="450" fill="url(#g1)"/>
+                    <polygon points="0,320 130,200 260,320" fill="#01466D" opacity=".5"/>
+                    <polygon points="220,320 400,145 600,320" fill="#01466D" opacity=".68"/>
+                    <polygon points="520,320 700,215 800,320" fill="#01466D" opacity=".45"/>
+                    <rect x="0" y="320" width="800" height="130" fill="#01466D" opacity=".88"/>
+                    <path d="M 30 450 C 220 380 420 400 790 318" fill="none" stroke="#F0D99A" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round" opacity=".7"/>
+                    <rect x="0" y="224" width="800" height="120" fill="#01466D" opacity=".58"/>
+                    <text x="38" y="282" font-family="Montserrat,sans-serif" font-size="50" font-weight="800" fill="#F7F5F0" letter-spacing="1">ON A TRAVERSÉ</text>
+                    <text x="38" y="338" font-family="Montserrat,sans-serif" font-size="50" font-weight="800" fill="#F0D99A" letter-spacing="1">LE SAHARA</text>
+                    <g transform="translate(695,356) scale(0.4)">
+                        <circle cx="65" cy="65" r="65" fill="#01466D" opacity=".85"/>
+                        <path d="M 82 18 A 48 48 0 1 0 132 68" fill="none" stroke="#D97046" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M 58 115 Q 52 90 62 72 Q 70 57 72 44 Q 74 57 80 72 Q 90 90 84 115 Z" fill="#C9D6CA" opacity=".6"/>
+                    </g>
+                </svg>
+            </div>
+            <div style="font-size:11px; color:#8A9E85; margin-top:8px; text-align:center; letter-spacing:1.5px; text-transform:uppercase;">Miniature type — aventure & destination</div>
+        </div>
+        <div>
+            <div class="thumb">
+                <svg width="100%" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <rect width="800" height="450" fill="#C9D6CA"/>
+                    <rect x="0" y="0" width="800" height="450" fill="#01466D" opacity=".06"/>
+                    <text x="400" y="170" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="16" font-weight="300" letter-spacing="8" fill="#01466D" opacity=".5">ÉPISODE 12</text>
+                    <text x="400" y="250" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="58" font-weight="800" fill="#01466D" letter-spacing="1">BULGARIE</text>
+                    <text x="400" y="290" text-anchor="middle" font-family="Lora,serif" font-size="18" font-style="italic" fill="#5D9B97" letter-spacing="1">Les Balkans, méconnus et magnifiques</text>
+                    <line x1="200" y1="312" x2="600" y2="312" stroke="#D97046" stroke-width="2" opacity=".5"/>
+                    <g transform="translate(695,356) scale(0.4)">
+                        <circle cx="65" cy="65" r="65" fill="#01466D"/>
+                        <path d="M 82 18 A 48 48 0 1 0 132 68" fill="none" stroke="#D97046" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M 58 115 Q 52 90 62 72 Q 70 57 72 44 Q 74 57 80 72 Q 90 90 84 115 Z" fill="#C9D6CA" opacity=".6"/>
+                    </g>
+                </svg>
+            </div>
+            <div style="font-size:11px; color:#8A9E85; margin-top:8px; text-align:center; letter-spacing:1.5px; text-transform:uppercase;">Miniature type — éditorial</div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     7. STUDIO / PLATEAU
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">07 — Signalétique studio</div>
+    <div class="section-title">Le logo sur le plateau.</div>
+    <div style="background:#F7F5F0; border-radius:16px; overflow:hidden; box-shadow:0 4px 24px rgba(1,70,109,.08);">
+        <svg width="100%" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <!-- Wall -->
+            <rect width="800" height="340" fill="#F8F5F0"/>
+            <!-- Wood slats left panel -->
+            <g>
+                <rect x="0" y="0" width="200" height="340" fill="#3A2E22"/>
+                <rect x="8"   y="0" width="9" height="340" fill="#5A4631"/>
+                <rect x="24"  y="0" width="9" height="340" fill="#4A3A28"/>
+                <rect x="40"  y="0" width="9" height="340" fill="#5A4631"/>
+                <rect x="56"  y="0" width="9" height="340" fill="#4A3A28"/>
+                <rect x="72"  y="0" width="9" height="340" fill="#5A4631"/>
+                <rect x="88"  y="0" width="9" height="340" fill="#4A3A28"/>
+                <rect x="104" y="0" width="9" height="340" fill="#5A4631"/>
+                <rect x="120" y="0" width="9" height="340" fill="#4A3A28"/>
+                <rect x="136" y="0" width="9" height="340" fill="#5A4631"/>
+                <rect x="152" y="0" width="9" height="340" fill="#4A3A28"/>
+                <rect x="168" y="0" width="9" height="340" fill="#5A4631"/>
+                <rect x="184" y="0" width="9" height="340" fill="#4A3A28"/>
+            </g>
+            <!-- Logo on slats -->
+            <g transform="translate(24, 55)">
+                <path d="M 82 22 A 38 38 0 1 0 112 56" fill="none" stroke="#D97046" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 64 104 Q 59 84 67 68 Q 73 56 74 46 Q 75 56 81 68 Q 89 84 84 104 Z" fill="#C9D6CA" opacity=".6"/>
+            </g>
+            <!-- LED screen -->
+            <rect x="220" y="20" width="570" height="300" rx="4" fill="#0B0E12"/>
+            <rect x="228" y="28" width="554" height="284" rx="2" fill="url(#screenGrad)"/>
+            <defs>
+                <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#8BB5C8"/>
+                    <stop offset="50%" stop-color="#C9D6CA"/>
+                    <stop offset="100%" stop-color="#D97046" stop-opacity=".5"/>
+                </linearGradient>
+            </defs>
+            <polygon points="228,240 310,155 390,240" fill="#01466D" opacity=".45"/>
+            <polygon points="350,240 505,130 660,240" fill="#01466D" opacity=".62"/>
+            <polygon points="620,240 720,175 782,240" fill="#01466D" opacity=".4"/>
+            <rect x="228" y="240" width="554" height="72" fill="#01466D" opacity=".8"/>
+            <!-- Floor -->
+            <rect x="0" y="340" width="800" height="80" fill="#7A5A3A"/>
+            <line x1="0" y1="360" x2="800" y2="360" stroke="#6A4C2E" stroke-width="1.5" opacity=".5"/>
+            <line x1="0" y1="384" x2="800" y2="384" stroke="#6A4C2E" stroke-width="1.5" opacity=".5"/>
+            <!-- Chairs + table -->
+            <ellipse cx="400" cy="400" rx="55" ry="16" fill="#D9BFA0" opacity=".9"/>
+            <ellipse cx="400" cy="394" rx="52" ry="14" fill="#F5E6D3"/>
+            <rect x="255" y="355" width="40" height="28" rx="7" fill="#C99B4A" opacity=".9"/>
+            <rect x="505" y="355" width="40" height="28" rx="7" fill="#3E5C4E" opacity=".9"/>
+        </svg>
+    </div>
+</div>
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     8. RÈGLES D'UTILISATION
+════════════════════════════════════════════ -->
+<div class="section">
+    <div class="section-label">08 — Règles d'utilisation</div>
+    <div class="section-title">Ce qu'il faut faire. Ce qu'il ne faut pas faire.</div>
+    <div class="rules-grid">
+        <div class="rule-card do">
+            <h4>✓ À faire</h4>
+            <p>Toujours respecter les proportions du logo. Ne jamais étirer ou déformer le symbole.</p>
+        </div>
+        <div class="rule-card do">
+            <h4>✓ À faire</h4>
+            <p>Laisser un espace de protection égal à la hauteur du "C" de CLUB autour du logo.</p>
+        </div>
+        <div class="rule-card do">
+            <h4>✓ À faire</h4>
+            <p>Utiliser le logo sur fond sauge, crème ou bleu nuit uniquement — les fonds de la marque.</p>
+        </div>
+        <div class="rule-card do">
+            <h4>✓ À faire</h4>
+            <p>Taille minimum : 80px de hauteur à l'écran, 15mm en impression.</p>
+        </div>
+        <div class="rule-card dont">
+            <h4>✗ À ne pas faire</h4>
+            <p>Ne jamais changer les couleurs du logo. L'arc est toujours terracotta #D97046.</p>
+        </div>
+        <div class="rule-card dont">
+            <h4>✗ À ne pas faire</h4>
+            <p>Ne jamais placer le logo sur une photo sans fond semi-transparent entre les deux.</p>
+        </div>
+        <div class="rule-card dont">
+            <h4>✗ À ne pas faire</h4>
+            <p>Ne jamais ajouter d'ombres, contours, effets ou filtres sur le logo.</p>
+        </div>
+        <div class="rule-card dont">
+            <h4>✗ À ne pas faire</h4>
+            <p>Ne jamais utiliser le logo seul sans le nom "Le Club des Voyageurs" dans les communications officielles.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+    <strong>Le Club des Voyageurs</strong>
+    Partir, revenir, raconter &nbsp;·&nbsp; Dossier Identité Visuelle 2026
+</footer>
+
+</body>
+</html>
