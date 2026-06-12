@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1254 1254" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="topArc" d="M 124.3 444.0 A 535 535 0 0 1 1129.7 444.0" fill="none"/>
+    <path id="bottomArc" d="M 124.3 810.0 A 535 535 0 0 0 1129.7 810.0" fill="none"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1254" height="1254" fill="#FFFFFF"/>
+
+  <!-- Outer circle -->
+  <circle cx="627" cy="627" r="605" fill="none" stroke="#097878" stroke-width="14"/>
+
+  <!-- Top curved tagline -->
+  <text font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700"
+        letter-spacing="8" fill="#097878" text-anchor="middle">
+    <textPath href="#topArc" xlink:href="#topArc" startOffset="50%">PARTEZ. INSPIREZ.</textPath>
+  </text>
+
+  <!-- Bottom curved tagline -->
+  <text font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700"
+        letter-spacing="8" fill="#097878" text-anchor="middle">
+    <textPath href="#bottomArc" xlink:href="#bottomArc" startOffset="50%">RACONTEZ. REVENEZ.</textPath>
+  </text>
+
+  <!-- Divider above center text -->
+  <line x1="580" y1="500" x2="674" y2="500" stroke="#097878" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Bullet -->
+  <circle cx="325" cy="595" r="9" fill="#097878"/>
+
+  <!-- Center wordmark -->
+  <text x="645" y="625" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="800"
+        letter-spacing="4" fill="#097878" text-anchor="middle">LE CLUB DES</text>
+  <text x="627" y="715" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="800"
+        letter-spacing="6" fill="#097878" text-anchor="middle">VOYAGEURS</text>
+
+  <!-- Divider below center text -->
+  <line x1="580" y1="765" x2="674" y2="765" stroke="#097878" stroke-width="6" stroke-linecap="round"/>
+</svg>
